@@ -1,0 +1,312 @@
+{
+  "instituto": {
+    "nombre": "Instituto de Genética",
+    "sigla": "IG",
+    "facultad": "Facultad de Medicina, Enfermería, Nutrición y Tecnología Médica",
+    "descripcion": "El Instituto de Genética es una unidad académica y de investigación de la Facultad de Medicina de la Universidad Mayor de San Andrés, dedicada al estudio y aplicación de la genética en el ámbito de la salud, con énfasis en la investigación, docencia y servicios especializados a la comunidad.",
+    "resolucion": "Resolución Rectoral N° 123/2018",
+    "direccion": "Av. Saavedra N° 2246, Edificio de la Facultad de Medicina, Piso 9",
+    "telefono": "(+591 2) 2229613",
+    "correo": "instituto.genetica@umsa.bo"
+  },
+  "about": {
+    "reseña_historica": "El Instituto de Genética fue creado en 1985 con el objetivo de promover la investigación genética en Bolivia. Desde entonces, ha contribuido al estudio de enfermedades hereditarias, la caracterización de poblaciones y el desarrollo de técnicas de diagnóstico molecular. A lo largo de los años, ha consolidado alianzas con instituciones nacionales e internacionales, posicionándose como un referente en el área de la genética médica.",
+    "mision": "Generar conocimiento científico en el campo de la genética, formar recursos humanos de alto nivel y ofrecer servicios especializados que contribuyan a la mejora de la salud de la población boliviana, con calidad, ética y compromiso social.",
+    "vision": "Ser un instituto de excelencia reconocido a nivel nacional e internacional por su producción científica, su impacto en la salud pública y su capacidad de innovación en el área de la genética y la biología molecular.",
+    "objetivos": "• Realizar investigación básica y aplicada en genética humana.\n• Ofrecer servicios de diagnóstico genético y asesoramiento.\n• Formar profesionales especializados en genética médica.\n• Promover la divulgación científica y la vinculación con la comunidad.",
+    "organigrama": "El Instituto está organizado en tres unidades operativas:\n- Unidad de Genética Médica\n- Unidad de Citogenética\n- Unidad de Genética Toxicológica\nCada unidad cuenta con un responsable académico y personal técnico especializado. La dirección general está a cargo de un Director designado por el Consejo de la Facultad."
+  },
+"faq": [
+    {
+      "question": "¿Cómo puedo solicitar una consulta genética?",
+      "answer": "Puede comunicarse a nuestro teléfono o correo electrónico para agendar una cita previa. La atención se realiza previa derivación médica."
+    },
+    {
+      "question": "¿Qué estudios de laboratorio ofrecen?",
+      "answer": "Realizamos cariotipo, FISH, estudios de fragilidad, diagnóstico molecular de enfermedades hereditarias y pruebas de genotoxicidad."
+    },
+    {
+      "question": "¿Cuáles son los horarios de atención?",
+      "answer": "Atención al público de lunes a viernes de 8:00 a 17:00, con previa cita."
+    },
+    {
+      "question": "¿El Instituto realiza investigaciones en conjunto con otras instituciones?",
+      "answer": "Sí, mantenemos colaboraciones con hospitales, universidades y centros de investigación nacionales e internacionales."
+    },
+    {
+      "question": "¿El Instituto de Genética realiza pruebas de paternidad?",
+      "answer": "No. Actualmente, el Instituto de Genética no realiza pruebas de paternidad. Sin embargo, mantiene colaboraciones con hospitales, universidades y centros de investigación nacionales e internacionales."
+    }
+  ],
+  "links": [
+    {
+      "nombre": "Universidad Mayor de San Andrés",
+      "url": "https://www.umsa.bo"
+    },
+    {
+      "nombre": "Facultad de Medicina - UMSA",
+      "url": "https://medicina.umsa.bo"
+    },
+    {
+      "nombre": "Sociedad Boliviana de Genética",
+      "url": "https://www.sbgenetica.bo"
+    },
+    {
+      "nombre": "Revista de Genética Médica",
+      "url": "#"
+    },
+    {
+      "nombre": "Biblioteca Digital UMSA",
+      "url": "https://biblioteca.umsa.bo"
+    }
+  ],
+
+
+
+"units": [
+  {
+    "name": "Unidad de Genética Médica",
+    "description": "Aborda el estudio de enfermedades hereditarias...",
+    "image": "genetics-lab-1.jpg",
+    "link": "https://medicina.umsa.bo/genetica-medica",
+    "slides": [
+      {"img": "genetica_medica_1.jpg", "caption": "Consulta de asesoramiento genético"},
+      {"img": "genetica_medica_2.jpg", "caption": "Equipo de especialistas"},
+      {"img": "genetica_medica_3.jpg", "caption": "Laboratorio de biología molecular"}
+    ]
+  },
+    {
+      "name": "Unidad de Citogenética",
+      "description": "Especializada en el análisis cromosómico, cultivo de linfocitos, cariotipo y técnicas de hibridación fluorescente in situ (FISH) para el diagnóstico de alteraciones cromosómicas.",
+      "image": "genetics-lab-2.webp",
+      "link": "https://medicina.umsa.bo/citogenetica",
+    "slides": [
+      {"img": "genetica_medica_1.jpg", "caption": "Consulta de asesoramiento genético"},
+      {"img": "genetica_medica_2.jpg", "caption": "Equipo de especialistas"},
+      {"img": "genetica_medica_3.jpg", "caption": "Laboratorio de biología molecular"}
+    ]
+
+    },
+    {
+      "name": "Unidad de Genética Toxicológica",
+      "description": "Estudia los efectos de agentes químicos y ambientales sobre el material genético. Desarrolla pruebas de mutagenicidad y colabora con programas de salud ocupacional.",
+      "image": "genetics-lab-3.png",
+      "link": "#",
+    "slides": [
+      {"img": "genetica_medica_1.jpg", "caption": "Consulta de asesoramiento genético"},
+      {"img": "genetica_medica_2.jpg", "caption": "Equipo de especialistas"},
+      {"img": "genetica_medica_3.jpg", "caption": "Laboratorio de biología molecular"}
+    ]
+    }
+  ],
+"staff_categories": [
+    "Docentes Investigadores",
+    "Personal administrativo"
+  ],
+
+
+"staff_members": {
+  "direccion": [
+    {
+      "nombre": "Dra. Beatriz Luna Barrón",
+      "titulo": "Médica Genetista",
+      "cargo": "Directora a.i.",
+      "contacto": "beatriz.luna@umsa.bo",
+      "resumen": "Directora del Instituto de Genética, especialista en citogenética.",
+      "foto": "beatriz_luna.jpg",
+      "unidad": "Citogenética"
+    }
+  ],
+  "investigadores": [
+    {
+      "nombre": "Valeria Aillón López",
+      "titulo": "Médico Cirujano, Máster en Genética",
+      "cargo": "Docente Investigadora Titular",
+      "contacto": "valeria.aillon@umsa.bo",
+      "resumen": "Experta en citogenética clásica y molecular, autora de publicaciones y guías.",
+      "foto": "valeria_aillon.jpg",
+      "unidad": "Citogenética"
+    },
+    {
+      "nombre": "Ana Rada Tarifa",
+      "titulo": "Lic. en Bioquímica y Farmacia, MSc en Salud Pública",
+      "cargo": "Asistente de Investigación I",
+      "contacto": "alrada@umsa.bo",
+      "resumen": "Investigadora en citogenética, epidemiología y dosimetría biológica.",
+      "foto": "ana_rada.jpg",
+      "unidad": "Citogenética"
+    },
+    {
+      "nombre": "Rolando Pablo Paz Bonilla",
+      "titulo": "Lic. en Bioquímica, Biotecnólogo",
+      "cargo": "Investigador",
+      "contacto": "rolando.paz@umsa.bo",
+      "resumen": "Experto en calidad de laboratorios y metodología de investigación.",
+      "foto": "rolando_paz.jpg",
+      "unidad": "Citogenética"
+    }
+  ],
+
+    "administrativos": [
+      {
+        "nombre": "Sra. Carmen Vargas",
+        "titulo": "Administradora",
+        "cargo": "Jefe de Administración",
+        "contacto": "carmen.vargas@umsa.bo",
+        "resumen": "Gestión de recursos y atención al público.",
+        "foto": "carmen_vargas.jpg"
+      },
+      {
+        "nombre": "Sr. Pedro Flores",
+        "titulo": "Secretario",
+        "cargo": "Atención al paciente",
+        "contacto": "pedro.flores@umsa.bo",
+        "resumen": "Coordinación de citas y trámites.",
+        "foto": "pedro_flores.jpg"
+      }
+    ]
+  },
+
+  "services": [
+    "Consulta y valoración por especialidad en genética",
+    "Interconsulta genética",
+    "Asesoramiento genético",
+    "Juntas médicas interdisciplinarias",
+    "Cultivo de linfocitos y cariotipo",
+    "Hibridación Fluorescente in situ (FISH)",
+    "Estudios de fragilidad cromosómica",
+    "Diagnóstico molecular de enfermedades hereditarias"
+  ],
+
+  "services_by_category": {
+    "consulta": [
+      "Consulta y valoración por especialidad en genética",
+      "Interconsulta genética"
+    ],
+    "asesoramiento": [
+      "Asesoramiento genético",
+      "Juntas médicas interdisciplinarias"
+    ],
+    "certificados": [
+      "Certificados y duplicados de exámenes de laboratorio"
+    ],
+    "cariotipo-sangre": [
+      "Cultivo de linfocitos en sangre periférica – cariotipo (estudio cromosómico)"
+    ],
+    "cariotipo-prenatal": [
+      "Cultivo en líquido amniótico (estudio cromosómico)"
+    ],
+    "analisis-tumores": [
+      "Análisis cromosómico en tumores sólidos y restos fetales"
+    ],
+    "mthfr": [
+      "Polimorfismo C677T de la Metilentetrahidrofolato reductasa"
+    ],
+    "fish": [
+      "Hibridación Fluorescente in situ (FISH) y Cariotipo"
+    ],
+    "extraccion-adn": [
+      "Extracción de DNA humano en sangre periférica y mucosa bucal"
+    ],
+    "genotoxicidad-sangre": [
+      "Intercambio entre Cromátides Hermanas (análisis de genotoxicidad)",
+      "Micronúcleos en Linfocitos (análisis de genotoxicidad)",
+      "Ensayo del Cometa (análisis de genotoxicidad)",
+      "Biodosimetría"
+    ],
+    "genotoxicidad-bucal": [
+      "Micronúcleos en Citoma bucal (análisis de genotoxicidad)"
+    ],
+    "apoyo-psicologico": [
+      "Apoyo psicológico para pacientes y sus familias"
+    ]
+  },
+
+
+  "research_areas": [
+    "Genética clínica y enfermedades raras",
+    "Citogenética y genómica",
+    "Toxicología genética"
+  ],
+  "research_lines": [
+    "Mutaciones asociadas a enfermedades metabólicas hereditarias",
+    "Análisis citogenético en trastornos del desarrollo",
+    "Evaluación de efectos genotóxicos de contaminantes ambientales",
+    "Estudios de asociación genética en enfermedades complejas"
+  ],
+  "projects": {
+    "ejecucion": [
+      "Estudio de mutaciones del gen BRCA1/2 en pacientes con cáncer de mama",
+      "Análisis de variantes genéticas en diabetes tipo 2 en la población de La Paz",
+      "Citogenética en niños con trastornos del espectro autista"
+    ],
+    "concluidos": [
+      "Caracterización de la frecuencia de portadores de hemoglobinopatías",
+      "Evaluación de daño genético en trabajadores mineros"
+    ]
+  },
+
+"publications": [
+    {
+      "title": "Frecuencia de mutaciones del gen MTHFR en pacientes con trombosis",
+      "authors": "Pérez R., Gómez L., Fernández M.",
+      "source": "Revista de Genética Médica, 2023; 45(2): 112-120"
+    },
+    {
+      "title": "Citogenética y diagnóstico de síndromes cromosómicos en Bolivia",
+      "authors": "Mendoza A., Villegas C.",
+      "source": "Anales de la Facultad de Medicina, 2022; 78(4): 34-41"
+    }
+  ],
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  "news": [
+    {
+      "titulo": "Nuevo equipo de secuenciación para el Instituto",
+      "resumen": "El Instituto ha adquirido un secuenciador de nueva generación que permitirá avanzar en estudios genómicos.",
+      "fecha": "15 de mayo de 2026",
+      "image": "genetics-lab-1.jpg"
+    },
+    {
+      "titulo": "Jornada de actualización en genética médica",
+      "resumen": "Se realizará una jornada de capacitación dirigida a médicos y profesionales de la salud.",
+      "fecha": "10 de junio de 2026",
+      "image": "genetics-lab-2.webp"
+    },
+    {
+      "titulo": "Investigadores del IG publican estudio sobre variantes genéticas",
+      "resumen": "El trabajo fue publicado en la revista internacional 'Human Genetics'.",
+      "fecha": "2 de abril de 2026",
+      "image": "genetics-lab-3.png"
+    }
+  ],
+  "events": [
+    {
+      "titulo": "Seminario: Avances en citogenética molecular",
+      "fecha": "20 de agosto de 2026",
+      "lugar": "Auditorio de la Facultad de Medicina",
+      "descripcion": "Se presentarán los resultados de investigaciones recientes en citogenética."
+    },
+    {
+      "titulo": "Curso de introducción a la genética médica",
+      "fecha": "5 al 9 de septiembre de 2026",
+      "lugar": "Aulas del Instituto",
+      "descripcion": "Curso teórico-práctico dirigido a estudiantes y profesionales."
+    }
+  ]
+
+}
+  

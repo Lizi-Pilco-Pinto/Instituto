@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+
+{% block title %}Organigrama | Instituto de Genética{% endblock %}
+
+{% block content %}
+    <section class="page-header">
+        <div class="container">
+            <span class="eyebrow">INSTITUTO</span>
+            <h1>Organigrama</h1>
+            <p>Estructura organizativa del Instituto de Genética.</p>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <div class="section-heading">
+                <span class="eyebrow">ESTRUCTURA</span>
+                <h2>Organización del Instituto</h2>
+            </div>
+            <div class="card">
+                <p>{{ about.organigrama|replace('\n', '<br>')|safe }}</p>
+            </div>
+            <!-- Aquí se puede agregar una imagen del organigrama -->
+        </div>
+    </section>
+
+    <div style="text-align:center; padding: 2rem 0;">
+        <a href="{{ url_for('main.acerca') }}" class="btn btn-outline">← Volver a Acerca del Instituto</a>
+    </div>
+{% endblock %}

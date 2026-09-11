@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+
+{% block title %}Eventos | Instituto de Genética{% endblock %}
+
+{% block content %}
+    <section class="page-header">
+        <div class="container">
+            <span class="eyebrow">AGENDA</span>
+            <h1>Eventos</h1>
+            <p>Seminarios, cursos, talleres y actividades del Instituto.</p>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            {% if events_items %}
+                {% for event in events_items %}
+                    <article class="feature-card">
+                        <h2>{{ event.titulo }}</h2>
+                    </article>
+                {% endfor %}
+            {% else %}
+                <div class="empty-state">
+                    No hay eventos publicados todavía. La sección queda preparada para
+                    incorporar fecha, lugar, descripción, afiche e inscripción.
+                </div>
+            {% endif %}
+        </div>
+        <div class="contact-block back-link">
+            <a href="{{ url_for('main.home') }}" class="btn btn-outline">← Volver a inicio</a>
+        </div>
+    </section>
+{% endblock %}

@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+
+{% block title %}Estudio MTHFR | Instituto de Genética{% endblock %}
+
+{% block content %}
+    <section class="page-header">
+        <div class="container">
+            <span class="eyebrow">SERVICIOS</span>
+            <h1>Estudio MTHFR</h1>
+            <p>Análisis del polimorfismo C677T del gen MTHFR.</p>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <div class="card">
+                <h2>Polimorfismo C677T de la Metilentetrahidrofolato reductasa</h2>
+                <p>Detección de variantes genéticas asociadas con el metabolismo del folato, relacionadas con riesgo de trombosis, defectos del tubo neural y otras condiciones.</p>
+                <p><strong>Muestra:</strong> Sangre periférica o mucosa bucal.</p>
+            </div>
+            <div style="margin-top: 2rem; text-align: center;">
+                <a href="{{ url_for('main.servicios') }}" class="btn btn-outline">← Volver a Servicios</a>
+            </div>
+        </div>
+    </section>
+{% endblock %}

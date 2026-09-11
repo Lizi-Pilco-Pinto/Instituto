@@ -1,0 +1,250 @@
+{% extends "base.html" %}
+
+{% block title %}Inicio | Instituto de Genética{% endblock %}
+
+
+{% block content %}
+<!-- MODAL DE NOTICIAS Y EVENTOS RECIENTES -->
+<div id="modal-reciente" class="modal-overlay">
+    <div class="modal-container modal-container-wide">
+        <button class="modal-close" id="modal-close-btn" aria-label="Cerrar">&times;</button>
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="eyebrow">ACTUALIDAD</span>
+                <h2>Noticias y eventos recientes</h2>
+            </div>
+
+            <!-- Noticias -->
+            <div class="modal-section">
+                <h3><i class="fas fa-newspaper"></i> Últimas Noticias</h3>
+                <div class="modal-news-grid">
+                    {% for item in news[:1] %}
+                        <article class="modal-news-card">
+                            <div class="modal-news-image">
+                                <img src="{{ url_for('static', filename='img/' + item.image) }}"
+                                     alt="{{ item.titulo }}"
+                                     loading="lazy">
+                            </div>
+                            <div class="modal-news-body">
+                                <span class="modal-news-date">
+                                    <i class="fas fa-calendar-alt"></i> {{ item.fecha }}
+                                </span>
+                                <h4>{{ item.titulo }}</h4>
+                                <p>{{ item.resumen[:120] }}{% if item.resumen|length > 120 %}...{% endif %}</p>
+                            </div>
+                        </article>
+                    {% endfor %}
+                </div>
+                <div class="modal-footer">
+                    <a href="{{ url_for('main.noticias') }}" class="btn btn-outline btn-sm">
+                        Ver todas las noticias →
+                    </a>
+                </div>
+            </div>
+
+            <!-- Eventos -->
+            <div class="modal-section">
+                <h3><i class="fas fa-calendar-check"></i> Próximos Eventos</h3>
+                <ul class="modal-events-list">
+                    {% for event in events[:1] %}
+                        <li>
+                            <div class="modal-event-date">
+                                <i class="fas fa-calendar-day"></i> {{ event.fecha }}
+                            </div>
+                            <strong>{{ event.titulo }}</strong>
+                            <p class="modal-desc">
+                                <i class="fas fa-map-marker-alt"></i> {{ event.lugar }}
+                            </p>
+                            <p class="modal-desc">{{ event.descripcion[:100] }}...</p>
+                        </li>
+                    {% endfor %}
+                </ul>
+                <div class="modal-footer">
+                    <a href="{{ url_for('main.eventos') }}" class="btn btn-outline btn-sm">
+                        Ver todos los eventos →
+                    </a>
+                </div>
+            </div>
+
+            <div class="modal-footer modal-footer-main">
+                <button class="btn btn-primary" id="modal-accept-btn">Entendido</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<!-- Hero con slider -->
+<section class="hero">
+    <div class="hero-slider-wrapper">
+        <div class="hero-slider">
+            <div class="slide" style="background-image: url('{{ url_for('static', filename='img/genetics.png') }}');">
+                <div class="slide-caption">Investigación genética de vanguardia</div>
+            </div>
+            <div class="slide" style="background-image: url('{{ url_for('static', filename='img/unidades/GEN (76).jpg') }}');">
+                <div class="slide-caption">Laboratorio de Toxicológia</div>
+            </div>
+            <div class="slide" style="background-image: url('{{ url_for('static', filename='img/unidades/GEN (86).jpg') }}');">
+                <div class="slide-caption">Unidad de Citogenética</div>
+            </div>
+        </div>
+        <button class="slider-btn slider-prev" aria-label="Anterior">&#10094;</button>
+        <button class="slider-btn slider-next" aria-label="Siguiente">&#10095;</button>
+        <div class="slider-dots">
+            <span class="dot active" data-index="0"></span>
+            <span class="dot" data-index="1"></span>
+            <span class="dot" data-index="2"></span>
+        </div>
+    </div>
+    <div class="hero-overlay"></div>
+    <div class="container hero-inner">
+        <div class="hero-content">
+            <span class="eyebrow">FACULTAD DE MEDICINA · UMSA</span>
+            <h1>Instituto de <span>Genética</span></h1>
+            <p>Información institucional, servicios especializados, investigación y actividades del Instituto de Genética de la Universidad Mayor de San Andrés.</p>
+            <div class="hero-actions">
+                <a class="btn btn-light" href="{{ url_for('main.acerca') }}">Conoce el Instituto →</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    <!-- Acceso rápido -->
+    <section class="section">
+        <div class="container">
+            <div class="section-heading center">
+                <span class="eyebrow">CONOCE EL INSTITUTO</span>
+                <h2>Información clara y organizada</h2>
+                <p>Accede rápidamente a las áreas principales del portal.</p>
+            </div>
+            <div class="card-grid three">
+                <a class="feature-card" href="{{ url_for('main.unidades') }}">
+                    <span class="feature-number">01</span>
+                    <div class="feature-icon">U</div>
+                    <h3>Unidades</h3>
+                    <p>Genética Médica, Citogenética y Genética Toxicológica.</p>
+                    <span class="text-link">Ver unidades →</span>
+                </a>
+                <a class="feature-card" href="{{ url_for('main.investigacion') }}">
+                    <span class="feature-number">03</span>
+                    <div class="feature-icon">I</div>
+                    <h3>Investigación</h3>
+                    <p>Proyectos en ejecución, concluidos y líneas de investigación.</p>
+                    <span class="text-link">Ver investigación →</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Servicios preview -->
+    <section class="section section-soft">
+        <div class="container service-preview">
+            <div class="service-intro">
+                <span class="eyebrow">SERVICIOS</span>
+                <h2>Atención y estudios especializados</h2>
+                <p>
+                    Consulta la oferta de servicios identificada en la propuesta inicial.
+                    Los detalles, requisitos y horarios serán incorporados después de la
+                    validación institucional.
+                </p>
+                <a class="btn btn-outline" href="{{ url_for('main.servicios') }}">Ver todos los servicios</a>
+            </div>
+            <div class="service-list">
+                {% for service in [
+                    "Consulta y valoración por especialidad",
+                    "Interconsulta",
+                    "Asesoramiento Genético",
+                    "Cultivo de linfocitos y cariotipo",
+                    "Hibridación Fluorescente in situ (FISH)"
+                ] %}
+                    <div class="service-item">
+                        <span class="service-number">{{ "%02d"|format(loop.index) }}</span>
+                        <h3>{{ service }}</h3>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+    </section>
+
+    <!-- Investigación -->
+    <section class="section">
+        <div class="container">
+            <div class="research-banner">
+                <div class="research-copy">
+                    <span class="eyebrow" style="color:#a7d8c5;">INVESTIGACIÓN</span>
+                    <h2>Conoce nuestros proyectos y líneas de investigación.</h2>
+                    <p>
+                        Un espacio para comunicar proyectos en ejecución, proyectos concluidos
+                        y producción científica.
+                    </p>
+                    <a class="btn btn-light" href="{{ url_for('main.investigacion') }}">Explorar investigación →</a>
+                </div>
+                <div class="research-visual">
+                    <div class="dna-placeholder" aria-hidden="true"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Noticias y eventos -->
+    <section class="section section-soft">
+        <div class="container">
+            <div class="section-heading">
+                <span class="eyebrow">ACTUALIDAD</span>
+                <h2>Noticias y próximos eventos</h2>
+                
+            </div>
+            <div class="update-grid">
+                <article class="update-card">
+                    <div class="update-image">
+                        <img src="{{ url_for('static', filename='img/genetica3.jpg') }}"
+                             class="photo">
+                    </div>
+                    <div class="update-content">
+                        <span class="tag">Noticias</span>
+                        <h3>Información institucional</h3>
+                        <p>Noticias del Instituto.</p>
+                        <a class="text-link" href="{{ url_for('main.noticias') }}">Ver noticias →</a>
+                    </div>
+                </article>
+                <article class="update-card">
+                    <div class="update-content">
+                        <span class="tag">Eventos</span>
+                        <h3>Próximas actividades</h3>
+                        <p>Espacio reservado para seminarios, cursos, talleres y otras actividades del Instituto.</p>
+                        <a class="text-link" href="{{ url_for('main.eventos') }}">Ver eventos →</a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Preguntas Frecuentes -->
+    <section class="section section-soft" id="faq">
+        <div class="container">
+            <div class="section-heading center">
+                <span class="eyebrow">INFORMACIÓN</span>
+                <h2>Preguntas Frecuentes</h2>
+            </div>
+            <div class="accordion faq-accordion">
+                {% for item in faq_items %}
+                    <article class="accordion-item">
+                        <button class="accordion-button" aria-expanded="false">
+                            <span>{{ item.question }}</span>
+                            <span class="accordion-icon">+</span>
+                        </button>
+                        <div class="accordion-content">
+                            <p>{{ item.answer }}</p>
+                        </div>
+                    </article>
+                {% endfor %}
+            </div>
+            <div style="text-align: center; margin-top: 30px;">
+                <a href="{{ url_for('main.contacto') }}" class="btn btn-primary">¿No encuentras tu pregunta? Contáctanos</a>
+            </div>
+        </div>
+    </section>
+{% endblock %}
+

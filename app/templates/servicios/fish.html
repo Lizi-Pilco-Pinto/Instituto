@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+
+{% block title %}FISH | Instituto de Genética{% endblock %}
+
+{% block content %}
+    <section class="page-header">
+        <div class="container">
+            <span class="eyebrow">SERVICIOS</span>
+            <h1>FISH</h1>
+            <p>Hibridación Fluorescente in situ.</p>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <div class="card">
+                <h2>Hibridación Fluorescente in situ (FISH) y Cariotipo</h2>
+                <p>Técnica que utiliza sondas fluorescentes para detectar secuencias de ADN específicas en los cromosomas, permitiendo identificar microdeleciones, translocaciones y otras alteraciones.</p>
+                <p><strong>Uso:</strong> Diagnóstico de síndromes microdelecionales, leucemias, linfomas, etc.</p>
+            </div>
+            <div style="margin-top: 2rem; text-align: center;">
+                <a href="{{ url_for('main.servicios') }}" class="btn btn-outline">← Volver a Servicios</a>
+            </div>
+        </div>
+    </section>
+{% endblock %}

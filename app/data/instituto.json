@@ -1,0 +1,64 @@
+{
+  "instituto": {
+    "nombre": "Instituto de Genética",
+    "sigla": "IG",
+    "facultad": "Facultad de Medicina, Enfermería, Nutrición y Tecnología Médica",
+    "descripcion": "El Instituto de Genética es una unidad académica y de investigación...",
+    "resolucion": "Resolución del Honorable Consejo Universitario Nº 701/2018",
+    "direccion": "Av. Saavedra N° 2246, Edificio de la Facultad de Medicina, Piso 9",
+    "telefono": "(591-2) 2229613",
+    "correo": "genetica.fment@umsa.bo"
+  },
+  "about": {
+    "reseña_historica": "El Instituto de Genética de la Facultad de Medicina de la Universidad Mayor de San Andrés fue fundado el 1 de abril de 1972, mediante la Resolución 223 de la Comisión Nacional de la Reforma Universitaria, iniciando formalmente sus actividades el 15 de junio de ese mismo año. Esta trayectoria de excelencia académica y científica fue ratificada mediante la Resolución del Honorable Consejo Universitario Nº 701/2018.\n\nLa creación del Instituto fue impulsada por la visión del Dr. Luis Felipe Hartmann, entonces Rector de la UMSA y pionero de la citogenética en Bolivia. A través de su gestión con la Organización de los Estados Americanos (OEA), se consolidó el Proyecto Multinacional de Genética, el cual constituyó el pilar fundamental para la adquisición de equipamiento de vanguardia y la especialización del capital humano inicial. Desde el 23 de enero de 1975, el Instituto de Genética opera en el noveno piso de la Facultad de Medicina, consolidándose como un espacio histórico y técnico de referencia para el país.",
+    "mision": "Instituto de investigación académica de excelencia con capacidad para planificar, ejecutar y evaluar proyectos de investigación y desarrollo tecnológico, formador de recursos humanos, prestador de servicios de calidad, con ética y alta sensibilidad social en el Área de Genética Humana y áreas de su competencia.",
+    "vision": "Ser un centro de referencia nacional dotado de alta calificación profesional y tecnológica, capaz de estudiar, evaluar e investigar los problemas genéticos de la población con calidad y ética, que coordine con otras entidades dedicadas al estudio de la genética, para el desarrollo de la misma a nivel nacional e internacional.",
+    "objetivos": "• Fortalecer la investigación básica, aplicada y tecnológica promoviendo la producción y generación de conocimiento científico.\n• Ampliar la cobertura de los diferentes servicios clínicos y de laboratorio ofrecidos a la población.\n• Desarrollar programas de educación continua de pre y posgrado para la formación de RR.HH. altamente calificados.",
+    "organigrama": "El Instituto está organizado en tres unidades operativas:\n- Unidad de Genética Médica\n- Unidad de Citogenética\n- Unidad de Genética Toxicológica\nCada unidad cuenta con un responsable académico y personal técnico especializado. La dirección general está a cargo de un Director designado por el Consejo de la Facultad. Actualmente, la Directora a.i. es la Dra. Beatriz Luna Barrón."
+  },
+
+  "faq": [
+    {
+      "question": "¿Cómo puedo solicitar una consulta genética?",
+      "answer": "Puede comunicarse a nuestro teléfono o correo electrónico para agendar una cita previa. La atención se realiza previa derivación médica."
+    },
+    {
+      "question": "¿Qué estudios de laboratorio ofrecen?",
+      "answer": "Realizamos cariotipo, FISH, estudios de fragilidad, diagnóstico molecular de enfermedades hereditarias y pruebas de genotoxicidad."
+    },
+    {
+      "question": "¿Cuáles son los horarios de atención?",
+      "answer": "Atención al público de lunes a viernes de 8:00 a 17:00, con previa cita."
+    },
+    {
+      "question": "¿El Instituto realiza investigaciones en conjunto con otras instituciones?",
+      "answer": "Sí, mantenemos colaboraciones con hospitales, universidades y centros de investigación nacionales e internacionales."
+    },
+    {
+      "question": "¿El Instituto de Genética realiza pruebas de paternidad?",
+      "answer": "No. Actualmente, el Instituto de Genética no realiza pruebas de paternidad. Sin embargo, mantiene colaboraciones con hospitales, universidades y centros de investigación nacionales e internacionales."
+    }
+  ],
+  "links": [
+    {
+      "nombre": "Universidad Mayor de San Andrés",
+      "url": "https://www.umsa.bo"
+    },
+    {
+      "nombre": "Facultad de Medicina - UMSA",
+      "url": "https://medicina.umsa.bo"
+    },
+    {
+      "nombre": "Sociedad Boliviana de Genética",
+      "url": "https://www.sbgenetica.bo"
+    },
+    {
+      "nombre": "Revista de Genética Médica",
+      "url": "#"
+    },
+    {
+      "nombre": "Biblioteca Digital UMSA",
+      "url": "https://biblioteca.umsa.bo"
+    }
+  ]
+}

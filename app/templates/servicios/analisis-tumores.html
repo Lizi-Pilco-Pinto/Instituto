@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+
+{% block title %}Análisis en tumores | Instituto de Genética{% endblock %}
+
+{% block content %}
+    <section class="page-header">
+        <div class="container">
+            <span class="eyebrow">SERVICIOS</span>
+            <h1>Análisis cromosómico en tumores</h1>
+            <p>Estudio genético de tumores sólidos y restos fetales.</p>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <div class="card">
+                <h2>Análisis cromosómico en tumores sólidos y restos fetales</h2>
+                <p>Identificación de alteraciones cromosómicas en tejidos tumorales o en muestras de abortos, para ayudar en el diagnóstico y pronóstico de enfermedades.</p>
+                <p><strong>Procedimiento:</strong> Cultivo de células tumorales y análisis citogenético.</p>
+            </div>
+            <div style="margin-top: 2rem; text-align: center;">
+                <a href="{{ url_for('main.servicios') }}" class="btn btn-outline">← Volver a Servicios</a>
+            </div>
+        </div>
+    </section>
+{% endblock %}

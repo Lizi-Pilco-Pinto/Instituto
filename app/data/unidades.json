@@ -1,0 +1,40 @@
+{
+  "units": [
+    {
+      "name": "Unidad de Genética Médica",
+      "description": "Aborda el estudio de enfermedades hereditarias, asesoramiento genético y diagnóstico molecular. Realiza consultas especializadas y apoya la investigación clínica.",
+      "image": "GEN (13).jpg",
+      "link": "https://medicina.umsa.bo/genetica-medica",
+      "plan_tematico": "La Unidad de Genética Médica se dedica al estudio de enfermedades humanas causadas por alteraciones en la estructura, función o regulación del material genético. Ofrece servicios de asesoramiento genético, consulta especializada, detección molecular de polimorfismos (MTHFR-C677T), detección del gen SRY y prueba de cromatina sexual. Además, participa en proyectos de investigación sobre enfermedades prevalentes y raras, y en la formación de residentes en genética médica.",
+      "slides": [
+        {"img": "GEN (14).jpg", "caption": "Consulta de asesoramiento genético"},
+        {"img": "GEN (120).jpg", "caption": "Equipo de especialistas"},
+        {"img": "GEN (12).jpg", "caption": "Laboratorio de biología molecular"}
+      ]
+    },
+    {
+      "name": "Unidad de Citogenética",
+      "description": "Especializada en el análisis cromosómico, cultivo de linfocitos, cariotipo y técnicas de hibridación fluorescente in situ (FISH) para el diagnóstico de alteraciones cromosómicas.",
+      "image": "citogenetica1.jpeg",
+      "link": "https://medicina.umsa.bo/citogenetica",
+      "plan_tematico": "La Citogenética es la rama de la genética que estudia los cromosomas, sus alteraciones numéricas y estructurales, y las enfermedades asociadas. La Unidad ofrece servicios de cariotipo con bandeo GTG en sangre periférica, cariotipo en muestras oncohematológicas, cariotipo en restos fetales, cariotipo en líquido amniótico, y estudios FISH para microdeleciones y translocaciones. Realiza también investigación en citogenética clínica y molecular, y dosimetría biológica.",
+      "slides": [
+        {"img": "citogenetica2.jpeg", "caption": "Análisis cromosómico"},
+        {"img": "GEN (95).jpg", "caption": "Equipo"},
+        {"img": "citogenetica4.jpeg", "caption": "Laboratorio de citogenética"}
+      ]
+    },
+    {
+      "name": "Unidad de Genética Toxicológica",
+      "description": "Estudia los efectos de agentes químicos y ambientales sobre el material genético. Desarrolla pruebas de mutagenicidad y colabora con programas de salud ocupacional.",
+      "image": "GEN (69).jpg",
+      "link": "#",
+      "plan_tematico": "La Genética Toxicológica estudia las alteraciones del material genético inducidas por agentes ambientales (físicos, químicos o biológicos), así como los mecanismos de susceptibilidad genética. La Unidad ofrece pruebas de intercambio de cromátides hermanas (ICH), micronúcleos en mucosa oral y sangre periférica, y ensayo del cometa. Estas pruebas son aplicadas en biomonitoreo de poblaciones expuestas, evaluación de daño genético en trabajadores, y estudios de toxicología ambiental.",
+      "slides": [
+        {"img": "GEN (70).jpg", "caption": "Pruebas de genotoxicidad"},
+        {"img": "GEN (60).jpg", "caption": "Microscopía de fluorescencia"},
+        {"img": "GEN (50).jpg", "caption": "Laboratorio de toxicología"}
+      ]
+    }
+  ]
+}

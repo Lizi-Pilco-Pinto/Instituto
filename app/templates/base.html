@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Portal Web del Instituto de Genética de la Facultad de Medicina de la UMSA">
+    <title>{% block title %}Instituto de Genética | UMSA{% endblock %}</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+<header class="site-header">
+    <div class="container header-inner">
+        <div class="header-left">
+            <img src="{{ url_for('static', filename='img/logo-instituto.png') }}"
+                 alt="Logo Instituto de Genética" class="logo-instituto">
+            <div class="header-brand">
+                <h1>INSTITUTO DE GENÉTICA</h1>
+                <p class="facultad">Facultad de Medicina, Enfermería, Nutrición y Tecnología Médica</p>
+                <p class="universidad">Universidad Mayor de San Andrés</p>
+            </div>
+        </div>
+        <div class="header-right">
+            <img src="{{ url_for('static', filename='img/logo-umsa1.png') }}"
+                 alt="Logo UMSA" class="logo-umsa">
+        </div>
+        <button class="menu-toggle" aria-label="Abrir menú" aria-expanded="false">☰</button>
+    </div>
+
+    <div class="container nav-container">
+        <nav class="main-nav" aria-label="Navegación principal">
+            <ul>
+                <li><a href="{{ url_for('main.home') }}">Inicio</a></li>
+
+                <!-- Instituto -->
+                <li class="dropdown">
+                    <button class="dropdown-toggle" data-dropdown="instituto">Acerca del Instituto</button>
+                    <ul class="dropdown-menu">
+                        <li><a href="{{ url_for('main.historia') }}">Historia</a></li>
+                        <li><a href="{{ url_for('main.organigrama') }}">Organigrama</a></li>
+                        <li><a href="{{ url_for('main.mision_vision') }}">Misión y Visión</a></li>
+                    </ul>
+                </li>
+
+                <!-- Unidades -->
+                <li class="dropdown">
+                    <button class="dropdown-toggle" data-dropdown="unidades">Unidades</button>
+                    <ul class="dropdown-menu">
+                        <li><a href="{{ url_for('main.genetica_medica') }}">Genética Médica</a></li>
+                        <li><a href="{{ url_for('main.citogenetica') }}">Citogenética</a></li>
+                        <li><a href="{{ url_for('main.toxicologica') }}">Genética Toxicológica</a></li>
+                    </ul>
+                </li>
+
+                <!-- Servicios -->
+                <li class="dropdown">
+                    <button class="dropdown-toggle" data-dropdown="servicios">Servicios</button>
+                    <ul class="dropdown-menu">
+                        <!-- Atención médica -->
+                        <li><a href="{{ url_for('main.consulta') }}">Consulta médica especializada</a></li>
+                        <li><a href="{{ url_for('main.interconsulta') }}">Interconsulta</a></li>
+                        <li><a href="{{ url_for('main.asesoramiento') }}">Asesoramiento genético</a></li>
+                        <li><a href="{{ url_for('main.certificados') }}">Certificados y duplicados</a></li>
+                        <!-- Estudios genéticos -->
+                        <li><a href="{{ url_for('main.cariotipo_sangre') }}">Cariotipo en sangre</a></li>
+                        <li><a href="{{ url_for('main.cariotipo_prenatal') }}">Cariotipo prenatal</a></li>
+                        <li><a href="{{ url_for('main.analisis_tumores') }}">Análisis en tumores</a></li>
+                        <li><a href="{{ url_for('main.mthfr') }}">Estudio MTHFR</a></li>
+                        <li><a href="{{ url_for('main.fish') }}">FISH</a></li>
+                        <li><a href="{{ url_for('main.extraccion_adn') }}">Extracción de ADN</a></li>
+                        <!-- Genotoxicidad -->
+                        <li><a href="{{ url_for('main.genotoxicidad_sangre') }}">Genotoxicidad en sangre</a></li>
+                        <li><a href="{{ url_for('main.genotoxicidad_bucal') }}">Genotoxicidad bucal</a></li>
+                        <li><a href="{{ url_for('main.biodosimetria') }}">Biodosimetría</a></li>
+                        <!-- Apoyo -->
+                        <li><a href="{{ url_for('main.apoyo_psicologico') }}">Apoyo psicológico</a></li>
+                    </ul>
+                </li>
+
+                <!-- Personal -->
+                <li class="dropdown">
+                    <button class="dropdown-toggle" data-dropdown="personal">Personal</button>
+                    <ul class="dropdown-menu">
+                        <li><a href="{{ url_for('main.investigadores') }}">Docentes Investigadores</a></li>
+                        <li><a href="{{ url_for('main.administrativos') }}">Personal Profesional Administrativo</a></li>
+                    </ul>
+                </li>
+
+                <!-- Enlaces directos -->
+                <li><a href="{{ url_for('main.investigacion') }}">Investigación</a></li>
+                <li><a href="{{ url_for('main.publicaciones') }}">Publicaciones</a></li>
+                <li><a href="{{ url_for('main.contacto') }}">Contacto</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<main>
+    {% with messages = get_flashed_messages(with_categories=true) %}
+        {% if messages %}
+            <div class="flash-container">
+                {% for category, message in messages %}
+                    <div class="flash {{ category }}">{{ message }}</div>
+                {% endfor %}
+            </div>
+        {% endif %}
+    {% endwith %}
+    {% block content %}{% endblock %}
+</main>
+
+<footer class="site-footer">
+    <div class="container">
+        <div class="footer-grid">
+            <div>
+                <h3>Instituto de Genética</h3>
+                <p>Facultad de Medicina, Enfermería, Nutrición y Tecnología Médica</p>
+                <p>Universidad Mayor de San Andrés</p>
+            </div>
+            <div>
+                <h3>Explora</h3>
+                <p><a href="{{ url_for('main.acerca') }}">Acerca del Instituto</a></p>
+                <p><a href="{{ url_for('main.investigacion') }}">Investigación</a></p>
+                <p><a href="{{ url_for('main.galeria') }}">Galería</a></p>
+            </div>
+            <div>
+                <h3>Contacto</h3>
+                <p>Dirección: {{ instituto.direccion }}</p>
+                <p>Teléfono: {{ instituto.telefono }}</p>
+                <p>Correo: {{ instituto.correo }}</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            © 2026 Instituto de Genética · Facultad de Medicina · UMSA
+        </div>
+    </div>
+</footer>
+
+<script src="{{ url_for('static', filename='js/main.js') }}"></script>
+<div id="lightbox" class="lightbox-overlay">
+    <span class="lightbox-close">&times;</span>
+    <img class="lightbox-image" src="" alt="Ampliada">
+</div>
+<!-- Modal para biografía del personal -->
+<div id="modal-personal" class="modal-overlay">
+    <div class="modal-container" style="max-width: 600px;">
+        <button class="modal-close" id="modal-personal-close">&times;</button>
+        <div class="modal-content">
+            <!-- Foto del personal -->
+            <div style="text-align: center; margin-bottom: 15px;">
+                <img id="modal-personal-foto" src="" alt="Foto del personal" 
+                     style="width: 150px; height: 150px; object-fit: cover; border-radius: 50%; border: 3px solid var(--gold);">
+            </div>
+            <h2 id="modal-personal-nombre" style="text-align: center;"></h2>
+            <p style="text-align: center; color: var(--umsa-medium); font-weight: 600;" id="modal-personal-cargo"></p>
+            <div id="modal-personal-biografia" style="white-space: pre-line; margin-top: 15px;"></div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

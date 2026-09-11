@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+
+{% block title %}Historia | Instituto de Genética{% endblock %}
+
+{% block content %}
+    <section class="page-header">
+        <div class="container">
+            <span class="eyebrow">INSTITUTO</span>
+            <h1>Historia del Instituto</h1>
+            <p>Conoce los orígenes y la trayectoria del Instituto de Genética.</p>
+        </div>
+    </section>
+
+<section class="section section-soft">
+    <div class="container">
+        <div class="section-heading">
+            <span class="eyebrow">RESEÑA HISTÓRICA</span>
+            <h2>Más de 35 años de investigación genética</h2>
+        </div>
+
+        <div class="history-grid">
+            <div class="card">
+                <p>{{ about['reseña_historica'] }}</p>
+            </div>
+
+            <figure class="history-image">
+                <img src="{{ url_for('static', filename='img/eventos/v2.jpeg') }}"
+                     alt="Historia del Instituto de Genética"
+                     loading="lazy">
+            </figure>
+        </div>
+    </div>
+</section>
+
+    <div style="text-align:center; padding: 2rem 0;">
+        <a href="{{ url_for('main.acerca') }}" class="btn btn-outline">← Volver a Acerca del Instituto</a>
+    </div>
+{% endblock %}

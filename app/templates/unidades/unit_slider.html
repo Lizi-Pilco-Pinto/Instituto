@@ -1,0 +1,20 @@
+{% if unit.slides %}
+<section class="unit-hero">
+    <div class="unit-slider-wrapper">
+        <div class="unit-slider">
+            {% for slide in unit.slides %}
+            <div class="slide" style="background-image: url('{{ url_for('static', filename='img/unidades/' + slide.img) }}');">
+                <div class="slide-caption">{{ slide.caption }}</div>
+            </div>
+            {% endfor %}
+        </div>
+        <button class="slider-btn unit-prev" aria-label="Anterior">&#10094;</button>
+        <button class="slider-btn unit-next" aria-label="Siguiente">&#10095;</button>
+        <div class="slider-dots unit-dots">
+            {% for slide in unit.slides %}
+            <span class="dot {% if loop.first %}active{% endif %}" data-index="{{ loop.index0 }}"></span>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+{% endif %}

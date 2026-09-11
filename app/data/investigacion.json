@@ -1,0 +1,40 @@
+{
+
+
+  "research_areas": [
+    "Genética clínica y enfermedades raras",
+    "Citogenética y genómica",
+    "Toxicología genética"
+  ],
+  "research_lines": [
+    "Mutaciones asociadas a enfermedades metabólicas hereditarias",
+    "Análisis citogenético en trastornos del desarrollo",
+    "Evaluación de efectos genotóxicos de contaminantes ambientales",
+    "Estudios de asociación genética en enfermedades complejas"
+  ],
+  "projects": {
+    "ejecucion": [
+      "Estudio de mutaciones del gen BRCA1/2 en pacientes con cáncer de mama",
+      "Análisis de variantes genéticas en diabetes tipo 2 en la población de La Paz",
+      "Citogenética en niños con trastornos del espectro autista"
+    ],
+    "concluidos": [
+      "Caracterización de la frecuencia de portadores de hemoglobinopatías",
+      "Evaluación de daño genético en trabajadores mineros"
+    ]
+  },
+
+"publications": [
+    {
+      "title": "Frecuencia de mutaciones del gen MTHFR en pacientes con trombosis",
+      "authors": "Pérez R., Gómez L., Fernández M.",
+      "source": "Revista de Genética Médica, 2023; 45(2): 112-120"
+    },
+    {
+      "title": "Citogenética y diagnóstico de síndromes cromosómicos en Bolivia",
+      "authors": "Mendoza A., Villegas C.",
+      "source": "Anales de la Facultad de Medicina, 2022; 78(4): 34-41"
+    }
+  ]
+
+}

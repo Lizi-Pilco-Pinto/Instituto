@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+
+{% block title %}Genotoxicidad bucal | Instituto de Genética{% endblock %}
+
+{% block content %}
+    <section class="page-header">
+        <div class="container">
+            <span class="eyebrow">SERVICIOS</span>
+            <h1>Genotoxicidad bucal</h1>
+            <p>Pruebas de daño genético en células de mucosa bucal.</p>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <div class="card">
+                <h2>Micronúcleos en Citoma bucal</h2>
+                <p>Análisis de micronúcleos en células exfoliadas de la mucosa oral, indicador de daño genético y exposición a genotóxicos.</p>
+                <p><strong>Ventajas:</strong> Muestra no invasiva, fácil obtención.</p>
+            </div>
+            <div style="margin-top: 2rem; text-align: center;">
+                <a href="{{ url_for('main.servicios') }}" class="btn btn-outline">← Volver a Servicios</a>
+            </div>
+        </div>
+    </section>
+{% endblock %}

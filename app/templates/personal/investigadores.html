@@ -1,0 +1,53 @@
+{% extends "base.html" %}
+
+{% block title %}Investigadores | Instituto de Genética{% endblock %}
+
+{% block content %}
+    <section class="page-header">
+        <div class="container">
+            <span class="eyebrow">PERSONAL</span>
+            <h1>Investigadores</h1>
+            <p>Equipo de investigación del Instituto.</p>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <div class="card-grid staff-grid">
+                {% for member in members %}
+                    <div class="feature-card staff-card">
+                        <div class="staff-card-inner">
+                            <!-- Foto a la izquierda -->
+                            <div class="staff-photo-wrapper">
+                                <img src="{{ url_for('static', filename='img/personal/' + member.foto) }}"
+                                     class="staff-photo" alt="{{ member.nombre }}">
+                            </div>
+                            <!-- Información a la derecha -->
+                            <div class="staff-info">
+                                <h3>{{ member.titulo }}</h3>
+                                <h4>{{ member.nombre }}</h4>
+                                <p><strong>{{ member.cargo }}</strong></p>
+                                <p><small>📧 {{ member.contacto }}</small></p>
+                                <p class="staff-resumen">{{ member.resumen }}</p>
+                                <button class="btn btn-outline btn-sm ver-mas-btn" 
+                                        data-nombre="{{ member.nombre }}" 
+                                        data-titulo="{{ member.titulo }}"
+                                        data-cargo="{{ member.cargo }}"
+                                        data-foto="{{ url_for('static', filename='img/personal/' + member.foto) }}"
+                                        data-biografia="{{ member.biografia }}">
+                                    Leer más
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                {% else %}
+                    <div class="empty-state">No hay miembros en esta categoría.</div>
+                {% endfor %}
+            </div>
+        </div>
+    </section>
+
+    <div style="text-align:center; padding: 2rem 0;">
+        <a href="{{ url_for('main.personal') }}" class="btn btn-outline">← Ver todo el personal</a>
+    </div>
+{% endblock %}

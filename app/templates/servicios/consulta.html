@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+
+{% block title %}Consulta médica especializada | Instituto de Genética{% endblock %}
+
+{% block content %}
+    <section class="page-header">
+        <div class="container">
+            <span class="eyebrow">SERVICIOS</span>
+            <h1>Consulta médica especializada</h1>
+            <p>Atención personalizada por especialistas en genética.</p>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <div class="card">
+                <h2>Valoración por especialidad</h2>
+                <p>Ofrecemos consultas médicas especializadas en genética, donde se evalúa el historial clínico y familiar del paciente para identificar posibles riesgos hereditarios.</p>
+                <p><strong>Procedimiento:</strong> Cita previa, evaluación clínica, estudio genealógico y, si es necesario, derivación a pruebas complementarias.</p>
+            </div>
+            <div style="margin-top: 2rem; text-align: center;">
+                <a href="{{ url_for('main.servicios') }}" class="btn btn-outline">← Volver a Servicios</a>
+            </div>
+        </div>
+    </section>
+{% endblock %}

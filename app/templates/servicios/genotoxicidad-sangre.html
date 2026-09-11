@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+
+{% block title %}Genotoxicidad en sangre | Instituto de Genética{% endblock %}
+
+{% block content %}
+    <section class="page-header">
+        <div class="container">
+            <span class="eyebrow">SERVICIOS</span>
+            <h1>Genotoxicidad en sangre</h1>
+            <p>Pruebas de daño genético en linfocitos.</p>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <div class="card">
+                <h2>Pruebas de genotoxicidad en sangre</h2>
+                <p>Incluye Intercambio entre Cromátides Hermanas (SCE), Micronúcleos en Linfocitos y Ensayo del Cometa.</p>
+                <p>Estas pruebas evalúan el daño al ADN causado por agentes físicos o químicos, útiles en vigilancia biológica y estudios de toxicología.</p>
+            </div>
+            <div style="margin-top: 2rem; text-align: center;">
+                <a href="{{ url_for('main.servicios') }}" class="btn btn-outline">← Volver a Servicios</a>
+            </div>
+        </div>
+    </section>
+{% endblock %}

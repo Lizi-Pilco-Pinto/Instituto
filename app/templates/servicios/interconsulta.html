@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+
+{% block title %}Interconsulta | Instituto de Genética{% endblock %}
+
+{% block content %}
+    <section class="page-header">
+        <div class="container">
+            <span class="eyebrow">SERVICIOS</span>
+            <h1>Interconsulta</h1>
+            <p>Colaboración médica entre especialistas para casos complejos.</p>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <div class="card">
+                <h2>Interconsulta genética</h2>
+                <p>Este servicio permite la comunicación entre el médico tratante y el genetista para resolver dudas diagnósticas, terapéuticas o de asesoramiento en pacientes con condiciones genéticas.</p>
+                <p><strong>Modalidad:</strong> Presencial o virtual, previa solicitud del médico de cabecera.</p>
+            </div>
+            <div style="margin-top: 2rem; text-align: center;">
+                <a href="{{ url_for('main.servicios') }}" class="btn btn-outline">← Volver a Servicios</a>
+            </div>
+        </div>
+    </section>
+{% endblock %}

@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+
+{% block title %}Genética Médica | Instituto de Genética{% endblock %}
+
+{% block content %}
+    <section class="page-header">
+        <div class="container">
+            <span class="eyebrow">UNIDAD</span>
+            <h1>Genética Médica</h1>
+            <p>Estudio de enfermedades hereditarias y asesoramiento genético.</p>
+        </div>
+    </section>
+    {% include "unidades/unit_slider.html" %}
+
+    <section class="section">
+        <div class="container">
+            {% include "unidades/_unit_tabs.html" %}
+        </div>
+    </section>
+
+    <div style="text-align:center; padding: 2rem 0;">
+        <a href="{{ url_for('main.unidades') }}" class="btn btn-outline">← Ver todas las unidades</a>
+    </div>
+{% endblock %}

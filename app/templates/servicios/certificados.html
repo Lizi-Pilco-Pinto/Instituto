@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+
+{% block title %}Certificados y duplicados | Instituto de Genética{% endblock %}
+
+{% block content %}
+    <section class="page-header">
+        <div class="container">
+            <span class="eyebrow">SERVICIOS</span>
+            <h1>Certificados y duplicados</h1>
+            <p>Expedición de documentos oficiales.</p>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <div class="card">
+                <h2>Certificados y duplicados de exámenes de laboratorio</h2>
+                <p>Emisión de copias oficiales de resultados de pruebas genéticas realizadas en el Instituto, para uso en trámites, consultas médicas o requerimientos legales.</p>
+                <p><strong>Requisito:</strong> Solicitud escrita y presentación de identificación.</p>
+            </div>
+            <div style="margin-top: 2rem; text-align: center;">
+                <a href="{{ url_for('main.servicios') }}" class="btn btn-outline">← Volver a Servicios</a>
+            </div>
+        </div>
+    </section>
+{% endblock %}

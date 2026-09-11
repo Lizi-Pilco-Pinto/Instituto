@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+
+{% block title %}Extracción de ADN | Instituto de Genética{% endblock %}
+
+{% block content %}
+    <section class="page-header">
+        <div class="container">
+            <span class="eyebrow">SERVICIOS</span>
+            <h1>Extracción de ADN</h1>
+            <p>Obtención de ADN humano para estudios genéticos.</p>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <div class="card">
+                <h2>Extracción de DNA humano en sangre periférica y mucosa bucal</h2>
+                <p>Proceso de aislamiento de ADN a partir de muestras biológicas para su uso en pruebas moleculares, genotipado, secuenciación, etc.</p>
+                <p><strong>Métodos:</strong> Técnicas estandarizadas de extracción con control de calidad.</p>
+            </div>
+            <div style="margin-top: 2rem; text-align: center;">
+                <a href="{{ url_for('main.servicios') }}" class="btn btn-outline">← Volver a Servicios</a>
+            </div>
+        </div>
+    </section>
+{% endblock %}

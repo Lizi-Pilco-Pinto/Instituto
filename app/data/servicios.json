@@ -1,0 +1,56 @@
+{
+  "services": [
+    "Consulta y valoración por especialidad en genética",
+    "Interconsulta genética",
+    "Asesoramiento genético",
+    "Juntas médicas interdisciplinarias",
+    "Cultivo de linfocitos y cariotipo",
+    "Hibridación Fluorescente in situ (FISH)",
+    "Estudios de fragilidad cromosómica",
+    "Diagnóstico molecular de enfermedades hereditarias"
+  ],
+
+  "services_by_category": {
+    "consulta": [
+      "Consulta y valoración por especialidad en genética",
+      "Interconsulta genética"
+    ],
+    "asesoramiento": [
+      "Asesoramiento genético",
+      "Juntas médicas interdisciplinarias"
+    ],
+    "certificados": [
+      "Certificados y duplicados de exámenes de laboratorio"
+    ],
+    "cariotipo-sangre": [
+      "Cultivo de linfocitos en sangre periférica – cariotipo (estudio cromosómico)"
+    ],
+    "cariotipo-prenatal": [
+      "Cultivo en líquido amniótico (estudio cromosómico)"
+    ],
+    "analisis-tumores": [
+      "Análisis cromosómico en tumores sólidos y restos fetales"
+    ],
+    "mthfr": [
+      "Polimorfismo C677T de la Metilentetrahidrofolato reductasa"
+    ],
+    "fish": [
+      "Hibridación Fluorescente in situ (FISH) y Cariotipo"
+    ],
+    "extraccion-adn": [
+      "Extracción de DNA humano en sangre periférica y mucosa bucal"
+    ],
+    "genotoxicidad-sangre": [
+      "Intercambio entre Cromátides Hermanas (análisis de genotoxicidad)",
+      "Micronúcleos en Linfocitos (análisis de genotoxicidad)",
+      "Ensayo del Cometa (análisis de genotoxicidad)",
+      "Biodosimetría"
+    ],
+    "genotoxicidad-bucal": [
+      "Micronúcleos en Citoma bucal (análisis de genotoxicidad)"
+    ],
+    "apoyo-psicologico": [
+      "Apoyo psicológico para pacientes y sus familias"
+    ]
+  }
+}

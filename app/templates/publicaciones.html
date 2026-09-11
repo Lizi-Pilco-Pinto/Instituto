@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+
+{% block title %}Publicaciones | Instituto de Genética{% endblock %}
+
+{% block content %}
+    <section class="page-header">
+        <div class="container">
+            <span class="eyebrow">PUBLICACIONES</span>
+            <h1>Producción científica</h1>
+            <p>
+                Ejemplos de publicaciones que aparecen en la información pública de la
+                Unidad de Genética Médica.
+            </p>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <div class="card-grid three">
+                {% for item in publications %}
+                    <article class="feature-card">
+                        <span class="feature-number">PUBLICACIÓN {{ "%02d"|format(loop.index) }}</span>
+                        <h2>{{ item.title }}</h2>
+                        <p><strong>Autores:</strong> {{ item.authors }}</p>
+                        <p>{{ item.source }}</p>
+                    </article>
+                {% endfor %}
+            </div>
+        </div>
+    </section>
+{% endblock %}

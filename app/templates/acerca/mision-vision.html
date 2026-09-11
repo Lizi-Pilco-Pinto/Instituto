@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+
+{% block title %}Misión y Visión | Instituto de Genética{% endblock %}
+
+{% block content %}
+    <section class="page-header">
+        <div class="container">
+            <span class="eyebrow">INSTITUTO</span>
+            <h1>Misión, Visión y Objetivos</h1>
+            <p>Nuestro compromiso con la genética y la salud.</p>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <div class="card-grid three">
+                <div class="feature-card">
+                    <span class="feature-number">MISIÓN</span>
+                    <div class="feature-icon">🎯</div>
+                    <h3>Misión</h3>
+                    <p>{{ about.mision }}</p>
+                </div>
+                <div class="feature-card">
+                    <span class="feature-number">VISIÓN</span>
+                    <div class="feature-icon">🔭</div>
+                    <h3>Visión</h3>
+                    <p>{{ about.vision }}</p>
+                </div>
+                <div class="feature-card">
+                    <span class="feature-number">OBJETIVOS</span>
+                    <div class="feature-icon">📋</div>
+                    <h3>Objetivos</h3>
+                    <p>{{ about.objetivos|replace('\n', '<br>')|safe }}</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div style="text-align:center; padding: 2rem 0;">
+        <a href="{{ url_for('main.acerca') }}" class="btn btn-outline">← Volver a Acerca del Instituto</a>
+    </div>
+{% endblock %}

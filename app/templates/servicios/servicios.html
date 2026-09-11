@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+
+{% block title %}Servicios | Instituto de Genética{% endblock %}
+
+{% block content %}
+    <section class="page-header">
+        <div class="container">
+            <span class="eyebrow">SERVICIOS</span>
+            <h1>Servicios especializados</h1>
+            <p>Lista completa de servicios ofrecidos por el Instituto de Genética.</p>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <div class="service-list">
+                {% for service in services %}
+                    <article class="service-item">
+                        <span class="service-number">{{ "%02d"|format(loop.index) }}</span>
+                        <div>
+                            <h3>{{ service }}</h3>
+                            <p>Detalles del procedimiento: pendiente de validación institucional.</p>
+                        </div>
+                    </article>
+                {% endfor %}
+            </div>
+        </div>
+    </section>
+{% endblock %}

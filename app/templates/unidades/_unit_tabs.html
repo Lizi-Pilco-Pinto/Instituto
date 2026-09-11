@@ -1,0 +1,98 @@
+<!-- Pestañas -->
+<div class="tabs-unit">
+    <button class="tab-unit active" data-tab="docentes">Personal</button>
+    <button class="tab-unit" data-tab="plan">Investigaciones</button>
+    <button class="tab-unit" data-tab="multimedia">Fotos y Videos</button>
+</div>
+<!-- ===== PANEL: PERSONAL ===== -->
+<div class="tab-panel-unit active" id="docentes">
+    <div class="card-grid staff-grid">
+        {% if members %}
+            {% for member in members %}
+                <div class="feature-card staff-card">
+                    <div class="staff-card-inner">
+                        <!-- Foto a la izquierda -->
+                        <div class="staff-photo-wrapper">
+                            <img src="{{ url_for('static', filename='img/personal/' + member.foto) }}"
+                                 class="staff-photo"
+                                 alt="{{ member.nombre }}"
+                                 onerror="this.style.display='none'; this.parentElement.querySelector('.staff-initials').style.display='flex';">
+                            <div class="staff-initials">
+                                {{ member.nombre.split()[0][0] }}{{ member.nombre.split()[1][0] if member.nombre.split()|length > 1 else '' }}
+                            </div>
+                        </div>
+                        <div class="staff-info">
+                            <h3>{{ member.titulo }}</h3>
+                            <h4>{{ member.nombre }}</h4>
+                            <p><strong>{{ member.cargo }}</strong></p>
+                            <p><small>📧 {{ member.contacto }}</small></p>
+                            <p class="staff-resumen">{{ member.resumen }}</p>
+                            {% if member.biografia %}
+                                <button class="btn btn-outline btn-sm ver-mas-btn"
+                                        data-nombre="{{ member.nombre }}"
+                                        data-titulo="{{ member.titulo }}"
+                                        data-cargo="{{ member.cargo }}"
+                                        data-foto="{{ url_for('static', filename='img/personal/' + member.foto) }}"
+                                        data-biografia="{{ member.biografia }}">
+                                    Leer más
+                                </button>
+                            {% endif %}
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+        {% else %}
+            <div class="empty-state">No hay miembros registrados para esta unidad.</div>
+        {% endif %}
+    </div>
+</div>
+
+<!-- ===== PANEL: INVESTIGACIONES ===== -->
+<div class="tab-panel-unit" id="plan">
+    <div class="card" style="max-width:900px; margin:auto; padding:30px;">
+        <h2>Investigaciones de la {{ unit.name }}</h2>
+        <p>{{ unit.plan_tematico or 'Información en proceso de actualización.' }}</p>
+        <h3>Líneas de investigación</h3>
+        <ul>
+            <li>Investigación en genética clínica y enfermedades raras</li>
+            <li>Citogenética y genómica</li>
+            <li>Toxicología genética y biomonitoreo</li>
+        </ul>
+        <h3>Servicios ofrecidos</h3>
+        <ul>
+            <li>Consultas especializadas</li>
+            <li>Pruebas de laboratorio</li>
+            <li>Asesoramiento genético</li>
+        </ul>
+    </div>
+</div>
+
+<!-- ===== PANEL: FOTOS Y VIDEOS ===== -->
+<div class="tab-panel-unit" id="multimedia">
+    <div class="section-heading">
+        <h3>Nuestros ambientes</h3>
+        <p>Espacios de trabajo, laboratorios y actividades académicas.</p>
+    </div>
+
+    {% if unit.slides %}
+        <div class="gallery-grid-unit">
+            {% for slide in unit.slides %}
+                <figure class="gallery-item">
+                    <img src="{{ url_for('static', filename='img/' + slide.img) }}"
+                         alt="{{ slide.caption }}"
+                         loading="lazy"
+                         class="gallery-img">
+                    <figcaption>{{ slide.caption }}</figcaption>
+                </figure>
+            {% endfor %}
+        </div>
+    {% else %}
+        <div class="empty-state">No hay imágenes disponibles para esta unidad.</div>
+    {% endif %}
+
+    <!-- Espacio para videos (opcional) -->
+    <div style="margin-top: 50px;">
+        <h3>Videos institucionales</h3>
+        <p>Próximamente, material audiovisual de nuestras actividades.</p>
+    </div>
+</div>

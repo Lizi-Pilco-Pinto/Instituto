@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+
+{% block title %}Apoyo psicológico | Instituto de Genética{% endblock %}
+
+{% block content %}
+    <section class="page-header">
+        <div class="container">
+            <span class="eyebrow">SERVICIOS</span>
+            <h1>Apoyo psicológico</h1>
+            <p>Acompañamiento emocional para pacientes y familias.</p>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <div class="card">
+                <h2>Apoyo psicológico para pacientes y sus familias</h2>
+                <p>Servicio de orientación y contención emocional para personas que enfrentan diagnósticos genéticos, así como para sus familiares, ayudando en la toma de decisiones y manejo del estrés.</p>
+                <p><strong>Modalidad:</strong> Sesiones individuales o familiares, presenciales o a distancia.</p>
+            </div>
+            <div style="margin-top: 2rem; text-align: center;">
+                <a href="{{ url_for('main.servicios') }}" class="btn btn-outline">← Volver a Servicios</a>
+            </div>
+        </div>
+    </section>
+{% endblock %}

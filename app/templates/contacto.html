@@ -1,0 +1,79 @@
+{% extends "base.html" %}
+
+{% block title %}Contacto | Instituto de Genética{% endblock %}
+
+{% block content %}
+    <!-- Encabezado de página -->
+    <section class="page-header">
+        <div class="container">
+            <h2>CONTACTO</h2>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <div class="contact-block">
+                        <h2>UBICACIÓN</h2>
+                        <p>{{ instituto.direccion }}</p>
+                        <p class="reference">(Frente al Hospital de Clínicas)</p>
+                    </div>
+
+                    <div class="contact-block">
+                        <h2>CONTACTO DIRECTO</h2>
+                        <p><strong>Teléfono / Fax:</strong> {{ instituto.telefono }}</p>
+                    </div>
+
+                    <div class="contact-block">
+                        <h2>CONSULTAS DIGITALES</h2>
+                        <p><a href="mailto:{{ instituto.correo }}">{{ instituto.correo }}</a></p>
+                    </div>
+                                    <div class="contact-block">
+                    <h2>REDES SOCIALES</h2>
+                    <div style="display: flex; gap: 20px; margin-top: 10px; font-size: 2rem;">
+                        <a href="https://www.facebook.com/profile.php?id=100071293437108" target="_blank" aria-label="Facebook">
+                            <i class="fab fa-facebook-square"></i>
+                        </a>
+                        <a href="https://www.instagram.com/facultaddemedicinaumsa?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw==" target="_blank" aria-label="Instagram">
+                            <i class="fab fa-instagram-square"></i>
+                        </a>
+                        <a href="https://x.com/UMSAinformacion?s=20" target="_blank" aria-label="X">
+                            <i class="fa-brands fa-x-twitter"></i>
+                        </a>
+                        <a href="http://www.youtube.com/@facultadmedicinaumsa927" target="_blank" aria-label="YouTube">
+                            <i class="fab fa-youtube-square"></i>
+                        </a>
+                    </div>
+                </div>
+
+                    <!-- Enlace de regreso -->
+                    <div class="contact-block back-link">
+                        <a href="{{ url_for('main.home') }}" class="btn btn-outline">← Volver a inicio</a>
+                    </div>
+                </div>
+
+                <!-- mapa -->
+                <div class="contact-map">
+                    <h2>Ubicación</h2>
+                    <div class="map-container">
+                        <iframe
+                            src="https://www.google.com/maps?q=-16.50835,-68.11999&hl=es&z=17&output=embed"
+                            width="100%"
+                            height="400"
+                            style="border:0; border-radius: 16px;"
+                            allowfullscreen=""
+                            loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                    <p class="map-note">
+                        <strong>Referencia:</strong> Zona Miraflores, Calle Claudio Sanjinés s/n<br>
+                        (Frente al Hospital del Tórax - Hospital de Clínicas)
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- PREGUNTAS FRECUENTES -->
+{% endblock %}

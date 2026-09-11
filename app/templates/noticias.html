@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+
+{% block title %}Noticias | Instituto de Genética{% endblock %}
+
+{% block content %}
+    <section class="page-header">
+        <div class="container">
+            <span class="eyebrow">ACTUALIDAD</span>
+            <h1>Noticias</h1>
+            <p>Espacio preparado para comunicados, actividades y novedades del Instituto.</p>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <div class="update-grid">
+                {% for item in news_items %}
+                    <article class="update-card">
+                        <img
+                            src="{{ url_for('static', filename='img/' + item.image) }}"
+                            alt="Imagen de demostración"
+                            style="width:100%;height:250px;object-fit:cover"
+                        >
+                        <div class="update-content">
+                            <span class="tag">{{ item.fecha }}</span>
+                            <h2>{{ item.titulo }}</h2>
+                            <p>{{ item.resumen }}</p>
+                        </div>
+                    </article>
+                {% else %}
+                    <div class="empty-state">No hay noticias publicadas todavía.</div>
+                {% endfor %}
+            </div>
+        </div>
+        <div class="contact-block back-link">
+            <a href="{{ url_for('main.home') }}" class="btn btn-outline">← Volver a inicio</a>
+        </div>
+    </section>
+{% endblock %}

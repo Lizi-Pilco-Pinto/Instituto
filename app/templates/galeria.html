@@ -1,0 +1,76 @@
+{% extends "base.html" %}
+
+{% block title %}Galería | Instituto de Genética{% endblock %}
+
+{% block content %}
+    <section class="page-header">
+        <div class="container">
+            <span class="eyebrow">MULTIMEDIA</span>
+            <h1>Galería</h1>
+            <p>
+                Galería de demostración para validar la composición visual antes de
+                sustituirla por material institucional.
+            </p>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <div class="gallery-grid">
+                {% set images = [
+                    ("genetics-lab-1.jpg", "Investigación genética"),
+                    ("genetics-lab-2.webp", "Trabajo de laboratorio"),
+                    ("genetics-lab-3.png", "Análisis genético"),
+                    ("genetics-lab-1.jpg", "Equipo y laboratorio"),
+                    ("genetics-lab-2.webp", "Análisis científico"),
+                    ("genetics-lab-3.png", "Ciencia y salud")
+                ] %}
+                {% for img, caption in images %}
+                    <figure style="margin:0">
+                        <img
+                            src="{{ url_for('static', filename='img/' + img) }}"
+                            alt="{{ caption }} - imagen de demostración"
+                            style="width:100%;height:250px;object-fit:cover;border-radius:16px"
+                        >
+                        <figcaption style="padding:10px 4px;color:var(--muted);font-size:.85rem">
+                            {{ caption }} · <strong>Demo</strong>
+                        </figcaption>
+                    </figure>
+                {% endfor %}
+            </div>
+
+            <div class="section-heading" style="margin-top:55px">
+                <span class="eyebrow">VIDEOS</span>
+                <h2>Espacio para videos institucionales</h2>
+                <p>Pendiente de enlaces oficiales o archivos proporcionados por el Instituto.</p>
+            </div>
+        </div>
+    </section>
+<section class="section">
+    <div class="container">
+        <div class="section-heading">
+            <span class="eyebrow">VIDEOS</span>
+            <h2>Videos institucionales</h2>
+        </div>
+        <div class="video-slider-wrapper">
+            <div class="video-slider">
+                <div class="slide-video">
+                    <iframe src="https://www.youtube.com/embed/VIDEO_ID_1" frameborder="0" allowfullscreen></iframe>
+                    <div class="video-caption">Video 1: Introducción a la Genética</div>
+                </div>
+                <div class="slide-video">
+                    <iframe src="https://www.youtube.com/embed/VIDEO_ID_2" frameborder="0" allowfullscreen></iframe>
+                    <div class="video-caption">Video 2: Técnicas de Citogenética</div>
+                </div>
+                <!-- más videos -->
+            </div>
+            <button class="slider-btn video-prev">&#10094;</button>
+            <button class="slider-btn video-next">&#10095;</button>
+            <div class="slider-dots video-dots">
+                <span class="dot active" data-index="0"></span>
+                <span class="dot" data-index="1"></span>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

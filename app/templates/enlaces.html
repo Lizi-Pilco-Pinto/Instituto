@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% block title %}Enlaces de interés | Instituto de Genética{% endblock %}
+{% block content %}
+<section class="page-header">
+    <div class="container">
+        <span class="eyebrow">RECURSOS</span>
+        <h1>Enlaces de interés</h1>
+        <p>Sitios web y portales relevantes para la comunidad genética.</p>
+    </div>
+</section>
+<section class="section">
+    <div class="container">
+        <ul style="list-style:none; padding:0; display:grid; gap:16px;">
+            {% for link in links %}
+                <li style="border-bottom:1px solid var(--border); padding:12px 0;">
+                    <a href="{{ link.url }}" target="_blank" rel="noopener" style="font-weight:700; color:var(--g700);">
+                        {{ link.nombre }} ↗
+                    </a>
+                </li>
+            {% endfor %}
+        </ul>
+    </div>
+</section>
+{% endblock %}

@@ -1,0 +1,36 @@
+{
+  "news": [
+    {
+      "titulo": "Noticia 1",
+      "resumen": "RESUMEN",
+      "fecha": "12 de marzo de 2026",
+      "image": "GEN(25).jpg"
+    },
+    {
+      "titulo": "Noticia 2",
+      "resumen": "RESUMEN",
+      "fecha": "5 de febrero de 2025",
+      "image": "genetics-lab-2.webp"
+    },
+    {
+      "titulo": "Noticia 3",
+      "resumen": "RESUMEN",
+      "fecha": "20 de enero de 2025",
+      "image": "genetics-lab-3.png"
+    }
+  ],
+  "events": [
+    {
+      "titulo": "Evento 1",
+      "fecha": "20 de agosto de 2025",
+      "lugar": "Auditorio de la Facultad de Medicina",
+      "descripcion": "DESCRIPCION"
+    },
+    {
+      "titulo": "Evento 1",
+      "fecha": "5 al 9 de septiembre de 2025",
+      "lugar": "Aulas del Instituto",
+      "descripcion": "DESCRIPCION"
+    }
+  ]
+}

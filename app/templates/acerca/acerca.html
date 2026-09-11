@@ -1,0 +1,90 @@
+{% extends "base.html" %}
+
+{% block title %}Acerca del Instituto | Instituto de Genética{% endblock %}
+
+{% block content %}
+    <section class="page-header">
+        <div class="container">
+            <span class="eyebrow">INSTITUTO</span>
+            <h1>Acerca del Instituto</h1>
+            <p>Conoce la historia, dependencia institucional y organización del Instituto de Genética.</p>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <div class="section-heading">
+                <span class="eyebrow">IDENTIDAD INSTITUCIONAL</span>
+                <h2>Instituto de Genética · UMSA</h2>
+                <p>{{ instituto.descripcion }}</p>
+            </div>
+            <div class="card-grid three">
+                <div class="feature-card">
+                    <span class="feature-number">DEPENDENCIA</span>
+                    <div class="feature-icon">F</div>
+                    <h3>Facultad de Medicina</h3>
+                    <p>{{ instituto.facultad }}</p>
+                </div>
+                <div class="feature-card">
+                    <span class="feature-number">SIGLA</span>
+                    <div class="feature-icon">IG</div>
+                    <h3>{{ instituto.sigla }}</h3>
+                    <p>Instituto de Genética.</p>
+                </div>
+                <div class="feature-card">
+                    <span class="feature-number">RESOLUCIÓN</span>
+                    <div class="feature-icon">72</div>
+                    <h3>Reconocimiento institucional</h3>
+                    <p>{{ instituto.resolucion }}</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section section-soft" id="historia">
+        <div class="container">
+            <div class="section-heading">
+                <span class="eyebrow">HISTORIA</span>
+                <h2>Una trayectoria ligada a la investigación médica</h2>
+            </div>
+            <div class="card">
+                <p>{{ about.reseña_historica }}</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="mision-vision">
+        <div class="container">
+            <div class="accordion">
+                <article class="accordion-item">
+                    <button class="accordion-button" aria-expanded="false">
+                        <span>Misión</span>
+                        <span>+</span>
+                    </button>
+                    <div class="accordion-content"><p>{{ about.mision }}</p></div>
+                </article>
+                <article class="accordion-item">
+                    <button class="accordion-button" aria-expanded="false">
+                        <span>Visión</span>
+                        <span>+</span>
+                    </button>
+                    <div class="accordion-content"><p>{{ about.vision }}</p></div>
+                </article>
+                <article class="accordion-item">
+                    <button class="accordion-button" aria-expanded="false">
+                        <span>Objetivos</span>
+                        <span>+</span>
+                    </button>
+                    <div class="accordion-content"><p>{{ about.objetivos|replace('\n', '<br>')|safe }}</p></div>
+                </article>
+                <article class="accordion-item" id="organigrama">
+                    <button class="accordion-button" aria-expanded="false">
+                        <span>Organigrama</span>
+                        <span>+</span>
+                    </button>
+                    <div class="accordion-content"><p>{{ about.organigrama|replace('\n', '<br>')|safe }}</p></div>
+                </article>
+            </div>
+        </div>
+    </section>
+{% endblock %}

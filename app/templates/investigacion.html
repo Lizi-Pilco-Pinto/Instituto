@@ -1,0 +1,75 @@
+{% extends "base.html" %}
+
+{% block title %}Investigación | Instituto de Genética{% endblock %}
+
+{% block content %}
+    <section class="page-header">
+        <div class="container">
+            <span class="eyebrow">INVESTIGACIÓN</span>
+            <h1>Investigación científica</h1>
+        </div>
+    </section>
+    <!-- Líneas -->
+    <section class="section section-soft">
+        <div class="container">
+            <div class="section-heading">
+                <span class="eyebrow">LÍNEAS</span>
+                <h2>Principales líneas de investigación</h2>
+            </div>
+            <div class="service-list">
+                {% for line in research_lines %}
+                    <article class="service-item">
+                        <span class="service-number">{{ "%02d"|format(loop.index) }}</span>
+                        <div>
+                            <p style="margin:0;color:var(--muted)">{{ line }}</p>
+                        </div>
+                    </article>
+                {% endfor %}
+            </div>
+        </div>
+    </section>
+    <!-- Áreas -->
+    <section class="section">
+        <div class="container">
+            <div class="section-heading">
+                <span class="eyebrow">ÁREAS</span>
+                <h2>Tres áreas de investigación</h2>
+            </div>
+            <div class="card-grid three">
+                {% for area in research_areas %}
+                    <article class="feature-card">
+                        <span class="feature-number">{{ "%02d"|format(loop.index) }}</span>
+                        <div class="feature-icon">I</div>
+                        <h3>{{ area }}</h3>
+                        <p>Área institucional de investigación.</p>
+                    </article>
+                {% endfor %}
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Proyectos -->
+    <section class="section">
+        <div class="container">
+            <div class="tabs">
+                <button class="tab active" data-tab="ejecucion">Proyectos en ejecución</button>
+                <button class="tab" data-tab="concluidos">Proyectos concluidos</button>
+            </div>
+            <div class="tab-panel active" id="ejecucion">
+                <div class="empty-state">
+                    Los proyectos se incorporarán después..
+                </div>
+            </div>
+            <div class="tab-panel" id="concluidos">
+                <div class="empty-state">
+                    Los proyectos concluidos se incorporarán después.
+                </div>
+            </div>
+        </div>
+        <div class="contact-block back-link">
+            <a href="{{ url_for('main.home') }}" class="btn btn-outline">← Volver a inicio</a>
+        </div>
+    </section>
+{% endblock %}

@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+
+{% block title %}Biodosimetría | Instituto de Genética{% endblock %}
+
+{% block content %}
+    <section class="page-header">
+        <div class="container">
+            <span class="eyebrow">SERVICIOS</span>
+            <h1>Biodosimetría</h1>
+            <p>Medición de exposición a radiación mediante análisis citogenético.</p>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <div class="card">
+                <h2>Biodosimetría</h2>
+                <p>Evaluación de la dosis de radiación absorbida mediante el recuento de aberraciones cromosómicas en linfocitos de sangre periférica.</p>
+                <p><strong>Aplicación:</strong> Vigilancia ocupacional en trabajadores expuestos a radiaciones ionizantes.</p>
+            </div>
+            <div style="margin-top: 2rem; text-align: center;">
+                <a href="{{ url_for('main.servicios') }}" class="btn btn-outline">← Volver a Servicios</a>
+            </div>
+        </div>
+    </section>
+{% endblock %}

@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+
+{% block title %}Unidades | Instituto de Genética{% endblock %}
+
+{% block content %}
+    <section class="page-header">
+        <div class="container">
+            <span class="eyebrow">UNIDADES</span>
+            <h1>Áreas especializadas</h1>
+            <p>Las tres unidades principales del Instituto de Genética.</p>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <div class="card-grid three">
+                {% for unit in units %}
+                    <article class="feature-card">
+                        <img src="{{ url_for('static', filename='img/' + unit.image) }}" alt="{{ unit.name }}" style="width:100%;height:210px;object-fit:cover;border-radius:14px;margin-bottom:20px">
+                        <span class="feature-number">UNIDAD {{ "%02d"|format(loop.index) }}</span>
+                        <h2>{{ unit.name }}</h2>
+                        <p>{{ unit.description }}</p>
+                        {% if unit.link != '#' %}
+                            <a class="text-link" href="{{ unit.link }}" target="_blank">Fuente institucional →</a>
+                        {% endif %}
+                    </article>
+                {% endfor %}
+            </div>
+        </div>
+    </section>
+{% endblock %}

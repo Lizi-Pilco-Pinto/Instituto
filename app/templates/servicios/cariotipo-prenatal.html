@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+
+{% block title %}Cariotipo prenatal | Instituto de Genética{% endblock %}
+
+{% block content %}
+    <section class="page-header">
+        <div class="container">
+            <span class="eyebrow">SERVICIOS</span>
+            <h1>Cariotipo prenatal</h1>
+            <p>Estudio cromosómico en líquido amniótico.</p>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <div class="card">
+                <h2>Cultivo en líquido amniótico – estudio cromosómico</h2>
+                <p>Análisis de células fetales obtenidas mediante amniocentesis para detectar anomalías cromosómicas durante el embarazo.</p>
+                <p><strong>Indicaciones:</strong> Edad materna avanzada, antecedentes de anomalías cromosómicas, hallazgos ecográficos.</p>
+            </div>
+            <div style="margin-top: 2rem; text-align: center;">
+                <a href="{{ url_for('main.servicios') }}" class="btn btn-outline">← Volver a Servicios</a>
+            </div>
+        </div>
+    </section>
+{% endblock %}

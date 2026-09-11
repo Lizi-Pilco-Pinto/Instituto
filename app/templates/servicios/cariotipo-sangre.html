@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+
+{% block title %}Cariotipo en sangre | Instituto de Genética{% endblock %}
+
+{% block content %}
+    <section class="page-header">
+        <div class="container">
+            <span class="eyebrow">SERVICIOS</span>
+            <h1>Cariotipo en sangre</h1>
+            <p>Estudio cromosómico en sangre periférica.</p>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <div class="card">
+                <h2>Cultivo de linfocitos en sangre periférica – cariotipo</h2>
+                <p>Análisis citogenético que permite identificar alteraciones en el número y estructura de los cromosomas a partir de una muestra de sangre.</p>
+                <p><strong>Aplicaciones:</strong> Diagnóstico de síndromes cromosómicos, estudios de infertilidad, evaluación de anomalías congénitas.</p>
+            </div>
+            <div style="margin-top: 2rem; text-align: center;">
+                <a href="{{ url_for('main.servicios') }}" class="btn btn-outline">← Volver a Servicios</a>
+            </div>
+        </div>
+    </section>
+{% endblock %}

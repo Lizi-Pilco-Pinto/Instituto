@@ -1,0 +1,146 @@
+{
+  "staff_categories": [
+    "Dirección",
+    "Docentes Investigadores",
+    "Personal Administrativo"
+  ],
+  "staff_members": {
+    "direccion": [
+      {
+        "nombre": "",
+        "titulo": "",
+        "cargo": "",
+        "contacto": "",
+        "resumen": "",
+        "biografia": "",
+        "foto": "",
+        "unidad": ""
+      }
+    ],
+    "investigadores": [
+      {
+        "nombre": "Jessika Barrón Cuenca",
+        "titulo": "Bioquímica, MSc en Toxicología",
+        "cargo": "Investigadora",
+        "contacto": "jessika.barron@umsa.bo",
+        "resumen": "Especialista en toxicología genética y biomonitoreo ambiental.",
+        "biografia": "Bioquímica con Maestría en Toxicología, con experiencia en evaluación de genotoxicidad y biomonitoreo de poblaciones expuestas a contaminantes. Coordina proyectos de investigación en la Unidad de Genética Toxicológica.",
+        "foto": "jessika.jpeg",
+        "unidad": "Genética Toxicológica"
+      },
+      {
+        "nombre": "Noemí Tirado Bustillos",
+        "titulo": "Bioquímica",
+        "cargo": "Investigadora",
+        "contacto": "noemi.tirado@umsa.bo",
+        "resumen": "Experta en técnicas de genotoxicidad y cultivos celulares.",
+        "biografia": "Bioquímica con amplia experiencia en técnicas de genotoxicidad (micronúcleos, intercambio de cromátides hermanas, ensayo cometa) y en cultivos celulares. Trabaja en la Unidad de Genética Toxicológica en el desarrollo de pruebas de biomonitoreo.",
+        "foto": "noemi.jpeg",
+        "unidad": "Genética Toxicológica"
+      },
+      {
+        "nombre": "Marina Cuti Anti",
+        "titulo": "Técnica de Laboratorio",
+        "cargo": "Técnico",
+        "contacto": "marina.cuti@umsa.bo",
+        "resumen": "Técnica especializada en pruebas de genotoxicidad.",
+        "biografia": "Técnica de laboratorio con formación en citogenética y genotoxicidad. Colabora en la Unidad de Genética Toxicológica en la realización de pruebas de micronúcleos y ensayo cometa.",
+        "foto": "marina.jpeg",
+        "unidad": "Genética Toxicológica"
+      },
+
+      {
+        "nombre": "Valeria Aillón López",
+        "titulo": "Médico Cirujano, Máster en Genética",
+        "cargo": "Docente Investigadora Titular",
+        "contacto": "valeria.aillon@umsa.bo",
+        "resumen": "Experta en citogenética clásica y molecular, autora de publicaciones y guías.",
+        "biografia": "Médico Cirujano, Máster en Genética y Docente Investigadora con amplia experiencia en genética, particularmente citogenética clásica y molecular, investigación biomédica y formación universitaria. Actualmente se desempeña como Docente Investigadora Titular del Instituto de Genética de la UMSA, donde desarrolla actividades de investigación científica, diagnóstico citogenético y producción académica. Autora del libro 'Acercamiento a la Citogenética Humana' y de múltiples artículos científicos.",
+        "foto": "valeria.jpeg",
+        "unidad": "Citogenética"
+      },
+      {
+        "nombre": "Ana Rada Tarifa",
+        "titulo": "Lic. en Bioquímica y Farmacia, MSc en Salud Pública",
+        "cargo": "Asistente de Investigación I",
+        "contacto": "alrada@umsa.bo",
+        "resumen": "Investigadora en citogenética, epidemiología y dosimetría biológica.",
+        "biografia": "Licenciada en Bioquímica y Farmacia, con Maestría en Salud Pública mención Epidemiología. Se desempeña como Asistente de Investigación I en la Unidad de Citogenética. Es Co-Presidente del Comité de Enlace del Punto Focal Regional para América Latina y el Caribe del Consejo Internacional de Ciencias (ISC RFP-LAC), Miembro de la Academia Mundial de Ciencias (TWAS Fellow) y Académica de Número de la Academia Nacional de Ciencias de Bolivia. Ha ocupado cargos de liderazgo en organizaciones científicas nacionales e internacionales.",
+        "foto": "ana.jpeg",
+        "unidad": "Citogenética"
+      },
+      {
+        "nombre": "Rolando Pablo Paz Bonilla",
+        "titulo": "Lic. en Bioquímica, Biotecnólogo",
+        "cargo": "Investigador",
+        "contacto": "rolando.paz@umsa.bo",
+        "resumen": "Experto en calidad de laboratorios y metodología de investigación.",
+        "biografia": "Licenciado en Bioquímica y Biotecnólogo con amplia formación en gestión de calidad, acreditación de laboratorios (ISO 15189), metodología de investigación y educación superior. Cuenta con múltiples diplomados y posgrados en áreas como implementación de sistemas de gestión, psicopedagogía y diseño de proyectos de investigación. Su experiencia abarca tanto el ámbito académico como el técnico, con énfasis en el aseguramiento de la calidad en laboratorios clínicos.",
+        "foto": "rolando.jpeg",
+        "unidad": "Citogenética"
+      },
+      {
+        "nombre": "Tania Gina Torres Aldunate",
+        "titulo": "Bioquímica - Farmacéutica, MSc.",
+        "cargo": "Asistente de Investigación I",
+        "contacto": "ginatorres19@yahoo.com",
+        "resumen": "Especialista en inmunofenotipo por citometría de flujo y genética toxicológica.",
+        "biografia": "Bioquímica - Farmacéutica con Maestría en Bioquímica Clínica y Gerencia de Servicios en Salud. Especialidad en inmunofenotipo por Citometría de Flujo Multiparamétrica. Docente de la residencia médica de hematología en la Caja Nacional de Salud y Hospital de Clínicas. Ha participado en múltiples cursos y congresos internacionales, y ha publicado investigaciones sobre biomonitoreo ambiental y toxicología genética.",
+        "foto": "gina.jpeg",
+        "unidad": "Genética Toxicológica"
+      },
+      {
+        "nombre": "Carem Ivone Martinez Maldonado",
+        "titulo": "Bioquímica, Master en Biología y Genética Molecular",
+        "cargo": "Administrativo / Investigadora",
+        "contacto": "carem.martinez@umsa.bo",
+        "resumen": "Especialista en gestión de calidad y auditoría de laboratorios.",
+        "biografia": "Bioquímica con Maestría en Biología y Genética Molecular, y Maestría en Bioquímica Clínica y Gerencia de Laboratorio. Especialista en Bioestadística, Auditor Líder en sistemas de gestión integrado (ISO 9001, 14001, 45001) y en implementación de sistemas de gestión según ISO 17025 y 15189. Con amplia experiencia en gestión y administración de instituciones de salud.",
+        "foto": "ivone.jpg",
+        "unidad": "Genética Médica"
+      },
+      {
+        "nombre": "Ximena Aguilar Mercado",
+        "titulo": "Médica Genetista",
+        "cargo": "Investigadora",
+        "contacto": "ximena.aguilar@umsa.bo",
+        "resumen": "Especialista en genética médica y asesoramiento genético.",
+        "biografia": "Médica genetista con experiencia en diagnóstico y asesoramiento de enfermedades hereditarias. Miembro activo de la Unidad de Genética Médica, participa en proyectos de investigación clínica y en la formación de residentes.",
+        "foto": "ximena.jpeg",
+        "unidad": "Genética Médica"
+      },
+      {
+        "nombre": "Pablo Almaraz Ossio",
+        "titulo": "Médico Genetista",
+        "cargo": "Investigador",
+        "contacto": "pablo.almaraz@umsa.bo",
+        "resumen": "Especialista en genética médica y enfermedades raras.",
+        "biografia": "Médico genetista con enfoque en enfermedades raras y malformaciones congénitas. Realiza consultas y asesoramiento genético en la Unidad de Genética Médica. Participa en proyectos de investigación sobre base genética de enfermedades prevalentes en Bolivia.",
+        "foto": "pablo.jpeg",
+        "unidad": "Genética Médica"
+      },
+      {
+        "nombre": "Rafael Montaño Arrieta",
+        "titulo": "Médico Genetista",
+        "cargo": "Investigador",
+        "contacto": "rafael.montano@umsa.bo",
+        "resumen": "Especialista en genética médica y asesoramiento prenatal.",
+        "biografia": "Médico genetista con dedicación al asesoramiento genético prenatal y al diagnóstico de anomalías congénitas. Miembro de la Unidad de Genética Médica, participa activamente en juntas médicas y en la docencia de residentes.",
+        "foto": "rafael.jpg",
+        "unidad": "Genética Médica"
+      }
+    ],
+    "administrativos": [
+      {
+        "nombre": "Germán Meleán Gumiel",
+        "titulo": "Responsable de la Comisión de Servicios",
+        "cargo": "Coordinador de Servicios",
+        "contacto": "german.melean@umsa.bo",
+        "resumen": "Coordinación de servicios y atención al paciente.",
+        "biografia": "Responsable de la Comisión de Servicios del Instituto, encargado de la coordinación de citas, recepción de muestras y atención a pacientes y usuarios externos.",
+        "foto": "german_melean.jpg",
+        "unidad": "Administrativo"
+      }
+    ]
+  }
+}

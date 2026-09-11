@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+
+{% block title %}Preguntas frecuentes | Instituto de Genética{% endblock %}
+
+{% block content %}
+    <section class="page-header">
+        <div class="container">
+            <span class="eyebrow">AYUDA</span>
+            <h1>Preguntas frecuentes</h1>
+            <p>Respuestas iniciales basadas en información institucional pública.</p>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <div class="accordion">
+                {% for item in faq_items %}
+                    <article class="accordion-item">
+                        <button class="accordion-button" aria-expanded="false">
+                            <span>{{ item.question }}</span>
+                            <span>+</span>
+                        </button>
+                        <div class="accordion-content">
+                            <p>{{ item.answer }}</p>
+                        </div>
+                    </article>
+                {% endfor %}
+            </div>
+        </div>
+    </section>
+{% endblock %}

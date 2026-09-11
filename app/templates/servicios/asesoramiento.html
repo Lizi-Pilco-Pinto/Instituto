@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+
+{% block title %}Asesoramiento Genético | Instituto de Genética{% endblock %}
+
+{% block content %}
+    <section class="page-header">
+        <div class="container">
+            <span class="eyebrow">SERVICIOS</span>
+            <h1>Asesoramiento Genético</h1>
+            <p>Orientación sobre riesgos hereditarios y toma de decisiones.</p>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <div class="card">
+                <h2>Asesoramiento genético</h2>
+                <p>Proceso de información y apoyo a pacientes y familias que tienen o pueden tener una condición genética. Ayuda a comprender el riesgo, las opciones de manejo y las pruebas disponibles.</p>
+                <p><strong>Incluye:</strong> Evaluación de riesgo, interpretación de resultados genéticos, consejo sobre opciones reproductivas y apoyo emocional.</p>
+            </div>
+            <div style="margin-top: 2rem; text-align: center;">
+                <a href="{{ url_for('main.servicios') }}" class="btn btn-outline">← Volver a Servicios</a>
+            </div>
+        </div>
+    </section>
+{% endblock %}
