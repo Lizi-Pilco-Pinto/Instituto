@@ -21,11 +21,6 @@ def load_all_data():
 
 DATA = load_all_data()
 
-@main.app_context_processor
-def inject_global_data():
-    # inyecta 'instituto' en todos los templates (como antes)
-    return {"instituto": DATA.get('instituto', {})}
-
 @main.route("/")
 def home():
     # Ordenar noticias por fecha (más recientes primero)
