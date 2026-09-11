@@ -13,7 +13,7 @@ app = Flask(
 
 app.secret_key = "cambia-esto-por-algo-secreto"
 
-# 👇 Accedemos a DATA a través del módulo routes
+# Accedemos a DATA a través del módulo routes
 @app.context_processor
 def inject_global_data():
     return {"instituto": routes_module.DATA.get('instituto', {})}
