@@ -890,7 +890,6 @@ p {
 /* Grid de noticias en el modal */
 .modal-news-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
     gap: 16px;
 }
 
@@ -1171,7 +1170,7 @@ p {
     background: transparent;
     box-shadow: none;
     border: none;
-    padding: 0;
+    padding: 0px;
 }
 .contact-map {
     background: white;
