@@ -104,8 +104,8 @@
         "titulo": "Médica Genetista",
         "cargo": "Investigadora",
         "contacto": "ximena.aguilar@umsa.bo",
-        "resumen": "Especialista en genética médica y asesoramiento genético.",
-        "biografia": "Médica genetista con experiencia en diagnóstico y asesoramiento de enfermedades hereditarias. Miembro activo de la Unidad de Genética Médica, participa en proyectos de investigación clínica y en la formación de residentes.",
+        "resumen": "",
+        "biografia": "",
         "foto": "ximena.jpeg",
         "unidad": "Genética Médica"
       },
@@ -114,8 +114,8 @@
         "titulo": "Médico Genetista",
         "cargo": "Investigador",
         "contacto": "pablo.almaraz@umsa.bo",
-        "resumen": "Especialista en genética médica y enfermedades raras.",
-        "biografia": "Médico genetista con enfoque en enfermedades raras y malformaciones congénitas. Realiza consultas y asesoramiento genético en la Unidad de Genética Médica. Participa en proyectos de investigación sobre base genética de enfermedades prevalentes en Bolivia.",
+        "resumen": ".",
+        "biografia": ".",
         "foto": "pablo.jpeg",
         "unidad": "Genética Médica"
       },
@@ -124,8 +124,8 @@
         "titulo": "Médico Genetista",
         "cargo": "Investigador",
         "contacto": "rafael.montano@umsa.bo",
-        "resumen": "Especialista en genética médica y asesoramiento prenatal.",
-        "biografia": "Médico genetista con dedicación al asesoramiento genético prenatal y al diagnóstico de anomalías congénitas. Miembro de la Unidad de Genética Médica, participa activamente en juntas médicas y en la docencia de residentes.",
+        "resumen": ".",
+        "biografia": ".",
         "foto": "rafael.jpg",
         "unidad": "Genética Médica"
       }
@@ -136,8 +136,8 @@
         "titulo": "Responsable de la Comisión de Servicios",
         "cargo": "Coordinador de Servicios",
         "contacto": "german.melean@umsa.bo",
-        "resumen": "Coordinación de servicios y atención al paciente.",
-        "biografia": "Responsable de la Comisión de Servicios del Instituto, encargado de la coordinación de citas, recepción de muestras y atención a pacientes y usuarios externos.",
+        "resumen": ".",
+        "biografia": ".",
         "foto": "german_melean.jpg",
         "unidad": "Administrativo"
       }
