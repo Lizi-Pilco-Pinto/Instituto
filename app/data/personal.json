@@ -58,7 +58,17 @@
         "foto": "marina.jpeg",
         "unidad": "Genética Toxicológica"
       },
-
+      {"comentario": "UNIDAD DE CITOGENETICA" },
+      {
+        "nombre": "Beatriz Luna Barrón",
+        "titulo": "Tituto",
+        "cargo": "Cargo",
+        "contacto": "",
+        "resumen": ".",
+        "biografia": ".",
+        "foto": "beatriz.jpeg",
+        "unidad": "Genética Médica"
+      },
       {
         "nombre": "Valeria Aillón López",
         "titulo": "Médico Cirujano, Máster en Genética",
@@ -82,7 +92,7 @@
       {
         "nombre": "Rolando Pablo Paz Bonilla",
         "titulo": "Lic. en Bioquímica, Biotecnólogo",
-        "cargo": "Investigador",
+        "cargo": "Asistente de Investigación I",
         "contacto": "",
         "resumen": "Experto en calidad de laboratorios y metodología de investigación.",
         "biografia": "Licenciado en Bioquímica y Biotecnólogo con amplia formación en gestión de calidad, acreditación de laboratorios (ISO 15189), metodología de investigación y educación superior. Cuenta con múltiples diplomados y posgrados en áreas como implementación de sistemas de gestión, psicopedagogía y diseño de proyectos de investigación. Su experiencia abarca tanto el ámbito académico como el técnico, con énfasis en el aseguramiento de la calidad en laboratorios clínicos.",
@@ -90,16 +100,47 @@
         "unidad": "Citogenética"
       },
       {
+        "nombre": "Erika Lafuente Álvarez",
+        "titulo": "Tituto",
+        "cargo": "Asistente de Investigación I",
+        "contacto": "",
+        "resumen": ".",
+        "biografia": ".",
+        "foto": "erika.jpeg",
+        "unidad": "Genética Médica"
+      },
+      {
+        "nombre": "Claudio Burgoa",
+        "titulo": "Tituto",
+        "cargo": "Cargo",
+        "contacto": "",
+        "resumen": ".",
+        "biografia": ".",
+        "foto": "claudio.jpg",
+        "unidad": "Genética Médica"
+      },
+      
+      {"comentario": "UNIDAD DE GENTICA MEDICA" },
+      {
         "nombre": "Ximena Aguilar Mercado",
         "titulo": "Tituto",
         "cargo": "Cargo",
         "contacto": "",
         "resumen": ".",
         "biografia": ".",
-        "foto": "ximena.jpeg",
+        "foto": "Ximena.jpg",
         "unidad": "Genética Médica"
       },
-
+      {
+        "nombre": "Germán Meleán Gumiel",
+        "titulo": "Tituto",
+        "cargo": "Cargo",
+        "contacto": "",
+        "resumen": ".",
+        "biografia": ".",
+        "foto": "german.jpg",
+        "unidad": "Genética Médica"
+      },
       {
         "nombre": "Pablo Almaraz Ossio",
         "titulo": "Tituto",
@@ -108,6 +149,16 @@
         "resumen": ".",
         "biografia": ".",
         "foto": "pablo.jpeg",
+        "unidad": "Genética Médica"
+      },
+      {
+        "nombre": "Jaqueline",
+        "titulo": "Tituto",
+        "cargo": "Cargo",
+        "contacto": "",
+        "resumen": ".",
+        "biografia": ".",
+        "foto": "jacqueline.jpg",
         "unidad": "Genética Médica"
       },
       {
@@ -140,7 +191,7 @@
         "resumen": ".",
         "biografia": ".",
         "foto": "german.jpg",
-        "unidad": "Genética Médica"
+        "unidad": "adm"
       }
     ]
   }
