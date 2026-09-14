@@ -39,6 +39,16 @@
         "unidad": "Genética Toxicológica"
       },
       {
+        "nombre": "Tania Gina Torres Aldunate",
+        "titulo": "Bioquímica - Farmacéutica, MSc.",
+        "cargo": "Asistente de Investigación I",
+        "contacto": "",
+        "resumen": "Especialista en inmunofenotipo por citometría de flujo y genética toxicológica.",
+        "biografia": "Bioquímica - Farmacéutica con Maestría en Bioquímica Clínica y Gerencia de Servicios en Salud. Especialidad en inmunofenotipo por Citometría de Flujo Multiparamétrica. Docente de la residencia médica de hematología en la Caja Nacional de Salud y Hospital de Clínicas. Ha participado en múltiples cursos y congresos internacionales, y ha publicado investigaciones sobre biomonitoreo ambiental y toxicología genética.",
+        "foto": "gina.jpeg",
+        "unidad": "Genética Toxicológica"
+      },
+      {
         "nombre": "Marina Cuti Anti",
         "titulo": "Técnica de Laboratorio",
         "cargo": "Técnico",
@@ -80,26 +90,6 @@
         "unidad": "Citogenética"
       },
       {
-        "nombre": "Tania Gina Torres Aldunate",
-        "titulo": "Bioquímica - Farmacéutica, MSc.",
-        "cargo": "Asistente de Investigación I",
-        "contacto": "",
-        "resumen": "Especialista en inmunofenotipo por citometría de flujo y genética toxicológica.",
-        "biografia": "Bioquímica - Farmacéutica con Maestría en Bioquímica Clínica y Gerencia de Servicios en Salud. Especialidad en inmunofenotipo por Citometría de Flujo Multiparamétrica. Docente de la residencia médica de hematología en la Caja Nacional de Salud y Hospital de Clínicas. Ha participado en múltiples cursos y congresos internacionales, y ha publicado investigaciones sobre biomonitoreo ambiental y toxicología genética.",
-        "foto": "gina.jpeg",
-        "unidad": "Genética Toxicológica"
-      },
-      {
-        "nombre": "Carem Ivone Martinez Maldonado",
-        "titulo": "Bioquímica, Master en Biología y Genética Molecular",
-        "cargo": "Administrativo / Investigadora",
-        "contacto": "carem.martinez@umsa.bo",
-        "resumen": "Especialista en gestión de calidad y auditoría de laboratorios.",
-        "biografia": "Bioquímica con Maestría en Biología y Genética Molecular, y Maestría en Bioquímica Clínica y Gerencia de Laboratorio. Especialista en Bioestadística, Auditor Líder en sistemas de gestión integrado (ISO 9001, 14001, 45001) y en implementación de sistemas de gestión según ISO 17025 y 15189. Con amplia experiencia en gestión y administración de instituciones de salud.",
-        "foto": "ivone.jpg",
-        "unidad": "Genética Médica"
-      },
-      {
         "nombre": "Ximena Aguilar Mercado",
         "titulo": "Tituto",
         "cargo": "Cargo",
@@ -109,6 +99,7 @@
         "foto": "ximena.jpeg",
         "unidad": "Genética Médica"
       },
+
       {
         "nombre": "Pablo Almaraz Ossio",
         "titulo": "Tituto",
@@ -128,6 +119,16 @@
         "biografia": ".",
         "foto": "rafael.jpg",
         "unidad": "Genética Médica"
+      },
+      {
+        "nombre": "Carem Ivone Martinez Maldonado",
+        "titulo": "Bioquímica, Master en Biología y Genética Molecular",
+        "cargo": "Administrativo / Investigadora",
+        "contacto": "carem.martinez@umsa.bo",
+        "resumen": "Especialista en gestión de calidad y auditoría de laboratorios.",
+        "biografia": "Bioquímica con Maestría en Biología y Genética Molecular, y Maestría en Bioquímica Clínica y Gerencia de Laboratorio. Especialista en Bioestadística, Auditor Líder en sistemas de gestión integrado (ISO 9001, 14001, 45001) y en implementación de sistemas de gestión según ISO 17025 y 15189. Con amplia experiencia en gestión y administración de instituciones de salud.",
+        "foto": "ivone.jpg",
+        "unidad": "Genética Médica"
       }
     ],
     "administrativos": [
@@ -138,8 +139,8 @@
         "contacto": "",
         "resumen": ".",
         "biografia": ".",
-        "foto": "german_melean.jpg",
-        "unidad": "Administrativo"
+        "foto": "german.jpg",
+        "unidad": "Genética Médica"
       }
     ]
   }
