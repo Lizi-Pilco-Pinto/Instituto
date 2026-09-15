@@ -59,7 +59,12 @@
             </div>
             <div class="tab-panel active" id="ejecucion">
                 <div class="empty-state">
-                    Los proyectos se incorporarán después..
+            {% if events_items %}
+                {% for event in investigacion_items %}
+                    <article class="feature-card">
+                        <h2>{{ proyect.titulo }}</h2>
+                    </article>
+                {% endfor %}
                 </div>
             </div>
             <div class="tab-panel" id="concluidos">
