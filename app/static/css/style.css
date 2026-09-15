@@ -126,6 +126,12 @@ p {
     display: flex;
     align-items: center;
 }
+.header-brand .universidad {
+    margin: 2px 0 0;
+    font-size: 0.8rem;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.7);
+}
 .logo-umsa {
     height: 70px;
     width: auto;
