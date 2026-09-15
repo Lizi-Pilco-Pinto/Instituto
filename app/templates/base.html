@@ -14,24 +14,32 @@
 <body>
 
 <header class="site-header">
-    <div class="container header-inner">
-        <div class="header-left">
-            <img src="{{ url_for('static', filename='img/logo-instituto.png') }}"
-                 alt="Logo Instituto de Genética" class="logo-instituto">
-            <div class="header-brand">
-                <p class="facultad">Facultad de Medicina, Enfermería, Nutrición y Tecnología Médica</p>
-                <h1>INSTITUTO DE GENÉTICA</h1>
+
+    <!-- Barra superior: identidad institucional -->
+    <div class="header-top">
+        <div class="container header-inner">
+            <div class="header-left">
+                <img src="{{ url_for('static', filename='img/logo-instituto.png') }}"
+                     alt="Logo Instituto de Genética" class="logo-instituto">
+                <div class="header-brand">
+                    <p class="facultad">Facultad de Medicina, Enfermería, Nutrición y Tecnología Médica</p>
+                    <h1>INSTITUTO DE GENÉTICA</h1>
+                </div>
+            </div>
+
+            <button class="menu-toggle" aria-label="Abrir menú" aria-expanded="false">☰</button>
+
+            <div class="header-right">
+                <div class="header-umsa-text">
+                    <p class="universidad">Universidad Mayor de San Andrés</p>
+                </div>
+                <img src="{{ url_for('static', filename='img/logo-umsa1.png') }}"
+                     alt="Logo UMSA" class="logo-umsa">
             </div>
         </div>
-        <div class="header-right header-brand">
-            <p class="universidad">Universidad Mayor de San Andrés</p>
-            <img src="{{ url_for('static', filename='img/logo-umsa1.png') }}"
-                 alt="Logo UMSA" class="logo-umsa">
-        </div>
-        <button class="menu-toggle" aria-label="Abrir menú" aria-expanded="false">☰</button>
     </div>
 
-    <div class="container nav-container">
+    <div class="header-nav-bar">
         <nav class="main-nav" aria-label="Navegación principal">
             <ul>
                 <li><a href="{{ url_for('main.home') }}">Inicio</a></li>

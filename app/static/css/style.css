@@ -71,17 +71,22 @@ p {
 
 /* ===== ENCABEZADO ===== */
 .site-header {
-    background: var(--umsa-dark);
-    color: var(--white);
-    border-bottom: 4px solid var(--gold);
     position: relative;
     z-index: 1000;
+    background-color: #003366;
+    background-image: var(--umsa-dark);
+}
+
+.header-top {
+    background-color: #003366;
+    padding: 16px 0;
+    position: relative;
+    box-shadow: 0;
 }
 
 .header-inner {
     display: flex;
     align-items: center;
-    justify-content: space-between;
     flex-wrap: wrap;
     gap: 20px;
 }
@@ -89,55 +94,79 @@ p {
 .header-left {
     display: flex;
     align-items: center;
-    gap: 18px;
+    gap: 20px;
     flex: 1 1 auto;
-}
-
-.logo-instituto {
-    height: 70px;
-    width: auto;
-    max-width: 120px;
-    object-fit: contain;
-}
-
-.header-brand h1 {
-    margin: 0;
-    font-size: var(--font-xxl);
-    font-weight: 900;
-    letter-spacing: 1px;
-    color: var(--white);
-    line-height: 1.1;
-}
-.header-brand .facultad {
-    margin: 2px 0;
-    font-size: var(--font-small);
-    font-weight: 600;
-    color: var(--umsa-lighter);
-}
-.header-brand .universidad {
-    margin: 2px 0 0;
-    font-size: 0.8rem;
-    font-weight: 400;
-    color: rgba(255, 255, 255, 0.7);
+    min-width: 0;
 }
 
 .header-right {
     flex: 0 0 auto;
     display: flex;
     align-items: center;
+    gap: 30px;              
+    text-align: center;
+    padding-right: 10px;   
 }
-.header-brand .universidad {
+
+.logo-instituto {
+    height: 76px;
+    width: auto;
+    max-width: 120px;
+    flex: 0 0 auto;
+    object-fit: contain;
+    filter: drop-shadow(0 3px 8px rgba(0, 0, 0, 0.35));
+    transition: transform 0.3s ease;
+}
+.header-left:hover .logo-instituto {
+    transform: scale(1.04);
+}
+
+.header-brand { min-width: 0; }
+
+.header-brand h1 {
     margin: 2px 0 0;
-    font-size: 0.8rem;
-    font-weight: 400;
-    color: rgba(255, 255, 255, 0.7);
+    font-size: clamp(1.1rem, 1.6vw + 0.5rem, 1.9rem);
+    font-weight: 900;
+    letter-spacing: 1.5px;
+    color: var(--white);
+    line-height: 1.05;
+    text-shadow: 0 3px 12px rgba(0, 0, 0, 0.35);
 }
+
+.header-brand .facultad {
+    margin: 0;
+    font-weight: 600;
+    color: var(--gold-light);
+    letter-spacing: 0.4px;
+    line-height: 1.3;
+}
+
+/* ---- Insignia UMSA (nombre + logo) ---- */
+
+
+.header-umsa-text .universidad {
+    margin: 0;
+    font-size: 0.85rem;
+    font-weight: 800;
+    color: var(--white);
+    letter-spacing: 0.5px;
+}
+
 .logo-umsa {
     height: 70px;
     width: auto;
     max-width: 120px;
     object-fit: contain;
 }
+
+.header-nav-bar {
+    background: linear-gradient(180deg, #14507a 0%, #0d3a5c 100%);
+    border-bottom: 3px solid var(--gold);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+    position: relative;
+    border-top: 0;
+}
+
 
 /* ===== MENÚ HAMBURGUESA ===== */
 .menu-toggle {
@@ -659,8 +688,8 @@ p {
 @media (max-width: 768px) {
     .staff-card-inner {
         flex-direction: column;
-        align-items: center;
-        text-align: center;
+        align-items: left;
+        text-align: left;
     }
     .staff-photo-wrapper {
         flex: 0 0 auto;
@@ -1604,36 +1633,110 @@ p {
 }
 
 @media (max-width: 992px) {
-    .header-inner {
-        flex-direction: column;
-        align-items: stretch;
-        gap: 10px;
-    }
-    .header-left {
-        flex: 1 1 auto;
-        justify-content: flex-start;
-    }
-    .header-right {
-        align-self: flex-end;
-    }
-    .main-nav {
-        justify-content: center;
-    }
+    .card-grid.three { grid-template-columns: repeat(2, 1fr); }
+    .hero-inner { gap: 30px; }
+
+    .logo-instituto { height: 64px; }
+    .logo-umsa { height: 50px; width: 50px; flex: 0 0 50px; }
+    .header-umsa-text .universidad { font-size: 0.78rem; }
+    .header-umsa-text .umsa-since   { font-size: 0.62rem; }
+
+    .main-nav { justify-content: center; }
+
     .hero-inner,
     .service-preview,
     .contact-grid,
-    .research-banner {
-        grid-template-columns: 1fr;
-    }
-    .card-grid.three {
-        grid-template-columns: 1fr 1fr;
-    }
+    .research-banner { grid-template-columns: 1fr; }
+
+    .card-grid.three { grid-template-columns: 1fr 1fr; }
 }
 
 @media (max-width: 768px) {
     .menu-toggle {
         display: block;
+        position: absolute;
+        top: 12px;
+        right: 12px;
+        z-index: 10;
     }
+
+    /* ---- ENCABEZADO MÓVIL: orden universidad → facultad → instituto ---- */
+    .header-inner {
+        display: grid;
+        grid-template-columns: auto 1fr auto;
+        grid-template-areas:
+            "logo universidad menu"
+            "logo facultad    menu"
+            "logo instituto   menu";
+        column-gap: 12px;
+        row-gap: 2px;
+        align-items: center;
+        padding-top: 8px;
+        flex-wrap: nowrap;
+        position: relative;
+    }
+
+    /* "Romper" los contenedores para que sus hijos se conviertan en items del grid */
+    .header-left,
+    .header-brand,
+    .header-right,
+    .header-umsa-text {
+        display: contents;
+    }
+
+    /* Logo del instituto: columna izquierda, ocupa las 3 filas */
+    .logo-instituto {
+        grid-area: logo;
+        height: 68px;
+        width: auto;
+        margin: 0;
+        align-self: center;
+        justify-self: start;
+    }
+
+    /* 1) Universidad */
+    .header-umsa-text .universidad {
+        grid-area: universidad;
+        font-size: 0.78rem;
+        color: var(--white);
+        letter-spacing: 0.5px;
+        margin: 0;
+        align-self: center;
+        line-height: 1.2;
+    }
+
+    /* 2) Facultad */
+    .header-brand .facultad {
+        grid-area: facultad;
+        font-size: 0.66rem;
+        color: var(--gold-light);
+        margin: 0;
+        align-self: center;
+        line-height: 1.2;
+    }
+
+    /* 3) Instituto */
+    .header-brand h1 {
+        grid-area: instituto;
+        font-size: 1rem;
+        letter-spacing: 0.6px;
+        margin: 0;
+        align-self: start;
+        line-height: 1.15;
+    }
+    /* Hamburguesa a la derecha, centrada verticalmente */
+    .menu-toggle {
+        grid-area: menu;
+        display: block;
+        position: static;
+        align-self: center;
+        justify-self: end;
+    }
+
+    /* Logo UMSA oculto */
+    .logo-umsa { display: none; }
+
+    /* ---- resto del menú móvil (sin cambios) ---- */
     .main-nav {
         display: none;
         flex-direction: column;
@@ -1655,11 +1758,7 @@ p {
         z-index: 9999;
     }
     .main-nav.open { display: flex; }
-    .main-nav ul {
-        flex-direction: column;
-        gap: 2px;
-        width: 100%;
-    }
+    .main-nav ul { flex-direction: column; gap: 2px; width: 100%; }
     .main-nav > ul > li { width: 100%; }
     .main-nav a:not(.dropdown-toggle) {
         text-align: left;
@@ -1678,7 +1777,6 @@ p {
     }
     .dropdown-menu {
         position: static;
-        background: var(--umsa-dark);
         border: none;
         border-radius: 0;
         box-shadow: none;
@@ -1708,13 +1806,10 @@ p {
         border-left-color: var(--gold);
         color: white;
     }
-    .dropdown.open .dropdown-toggle {
-        background: rgba(255, 255, 255, 0.08);
-    }
+    .dropdown.open .dropdown-toggle { background: rgba(255, 255, 255, 0.08); }
     .dropdown.open .dropdown-toggle::after { transform: rotate(180deg); }
 
-    /* Ajustes móviles generales */
-    .header-brand h1 { font-size: 1.2rem; }
+    /* Ajustes móviles generales (los que ya tenías) */
     .hero-content h1 { font-size: 2.8rem; }
     .service-preview { grid-template-columns: 1fr; }
     .research-banner { grid-template-columns: 1fr; }
@@ -1745,6 +1840,9 @@ p {
 }
 
 @media (max-width: 480px) {
+    .logo-instituto { height: 44px; }
+    .logo-umsa { height: 36px; width: 36px; flex: 0 0 36px; }
+    .header-brand .facultad { font-size: 0.65rem; }
     .container { padding: 0 16px; }
     .section { padding: 60px 0; }
     .header-brand h1 { font-size: 1rem; }
