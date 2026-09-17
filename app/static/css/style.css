@@ -140,9 +140,6 @@ p {
     line-height: 1.3;
 }
 
-/* ---- Insignia UMSA (nombre + logo) ---- */
-
-
 .header-umsa-text .universidad {
     margin: 0;
     font-size: 0.85rem;
@@ -188,7 +185,7 @@ p {
     flex-wrap: wrap;
     justify-content: center;
     gap: 4px;
-    padding-top: 8px;
+    padding-top: 5px;
     margin-top: 6px;
 }
 
@@ -684,37 +681,6 @@ p {
 .card-grid.staff-grid {
     grid-template-columns: repeat(2, 1fr);
 }
-/* Responsive: en móviles la foto queda arriba */
-@media (max-width: 768px) {
-    .staff-card-inner {
-        flex-direction: column;
-        align-items: left;
-        text-align: left;
-    }
-    .staff-photo-wrapper {
-        flex: 0 0 auto;
-        max-width: 150px;
-        width: 100%;
-    }
-    .staff-photo {
-        height: 150px;
-    }
-    .staff-info {
-        text-align: center;
-    }
-    .staff-info .btn {
-        align-self: center;
-    }
-}
-
-@media (max-width: 480px) {
-    .staff-photo-wrapper {
-        max-width: 120px;
-    }
-    .staff-photo {
-        height: 120px;
-    }
-}
 
 /* ===== SERVICIOS ===== */
 .service-preview {
@@ -1029,26 +995,6 @@ p {
     margin-top: 24px;
     padding-top: 20px;
     border-top: 1px solid var(--border);
-}
-
-/* Responsive del modal */
-@media (max-width: 768px) {
-    .modal-news-grid {
-        grid-template-columns: 1fr;
-    }
-    .modal-container-wide {
-        padding: 20px;
-        max-height: 90vh;
-    }
-    .modal-header h2 {
-        font-size: 1.4rem;
-    }
-}
-
-@media (max-width: 480px) {
-    .modal-news-image {
-        height: 150px;
-    }
 }
 /* ===== MODAL ===== */
 .modal-overlay {
@@ -1474,32 +1420,6 @@ p {
 .unit-hero .unit-prev { left: 20px; }
 .unit-hero .unit-next { right: 20px; }
 
-/* Responsive del hero de unidad */
-@media (max-width: 768px) {
-    .unit-hero { height: 360px; }
-    .unit-hero .unit-slider .slide-caption {
-        bottom: 70px;
-        left: 20px;
-        font-size: 0.8rem;
-        padding: 8px 16px;
-    }
-    .unit-hero .slider-btn {
-        font-size: 1.8rem;
-        padding: 6px 12px;
-    }
-    .unit-hero .unit-prev { left: 10px; }
-    .unit-hero .unit-next { right: 10px; }
-}
-
-@media (max-width: 480px) {
-    .unit-hero { height: 280px; }
-    .unit-hero .unit-slider .slide-caption {
-        bottom: 60px;
-        left: 15px;
-        font-size: 0.75rem;
-        padding: 6px 14px;
-    }
-}
 
 
 /* ===== PIE DE PÁGINA ===== */
@@ -1648,6 +1568,7 @@ p {
 }
 
 @media (max-width: 768px) {
+
     .menu-toggle {
         display: block;
         position: absolute;
@@ -1696,6 +1617,7 @@ p {
         margin: 0;
         align-self: center;
         line-height: 1.2;
+        text-align: left;
     }
 
     .header-brand .facultad {
@@ -1705,6 +1627,7 @@ p {
         margin: 0;
         align-self: center;
         line-height: 1.2;
+        text-align: left;
     }
 
     .header-brand h1 {
@@ -1729,7 +1652,7 @@ p {
         display: none;
         flex-direction: column;
         align-items: stretch;
-        width: auto;
+        width: 260px ;
         min-width: 280px;
         max-width: 90vw;
         background: var(--umsa-dark);
@@ -1744,6 +1667,8 @@ p {
         right: 0;
         top: calc(100% + 8px);
         z-index: 9999;
+
+        max-height: calc(100vh - 100px);
     }
     .main-nav.open { display: flex; }
     .main-nav ul { flex-direction: column; gap: 2px; width: 100%; }
@@ -1769,23 +1694,32 @@ p {
         border-radius: 0;
         box-shadow: none;
         margin: 0;
-        padding: 0 0 0 16px;
+        padding: 0 0 0 10px;
         width: 100%;
         opacity: 1;
         transform: none;
         pointer-events: auto;
-        display: none;
-        background: rgba(0, 51, 102, 0.9);
+        display: block;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.1s ease-out;
+        background: #024;
     }
-    .dropdown.open .dropdown-menu { display: block; }
+    .dropdown.open .dropdown-menu { 
+        max-height: 250px; 
+        overflow: auto;
+        display: block; }
     .dropdown-menu a {
         display: block;
-        padding: 10px 20px 10px 30px;
+        padding: 10px 16px;
         color: white;
         border-bottom: 1px solid rgba(255, 255, 255, 0.06);
         border-left: 3px solid transparent;
         text-align: left;
         font-size: var(--font-small);
+
+        white-space: normal;
+        word-wrap: break-word;
     }
     .dropdown-menu a:hover,
     .dropdown-menu a:focus,
@@ -1801,7 +1735,7 @@ p {
     .hero-content h1 { font-size: 2.8rem; }
     .service-preview { grid-template-columns: 1fr; }
     .research-banner { grid-template-columns: 1fr; }
-    .footer-grid { grid-template-columns: 1fr; gap: 30px; }
+    .footer-grid { grid-templat)e-columns: 1fr; gap: 30px; }
     .update-grid { grid-template-columns: 1fr; }
     .hero-inner { grid-template-columns: 1fr; }
     .slide { background-position: center 30%; }
@@ -1819,7 +1753,56 @@ p {
         grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
         gap: 15px;
     }
-    .gallery-item img { cen: 170px; }
+    .gallery-item img { center: 170px; }
+    .unit-hero { height: 360px; }
+    .unit-hero .unit-slider .slide-caption {
+        bottom: 70px;
+        left: 20px;
+        font-size: 0.8rem;
+        padding: 8px 16px;
+    }
+    .unit-hero .slider-btn {
+        font-size: 1.8rem;
+        padding: 6px 12px;
+    }
+    .unit-hero .unit-prev { left: 10px; }
+    .unit-hero .unit-next { right: 10px; }
+    .history-grid {
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+    .history-image img {
+        max-height: 280px;
+    }
+    .staff-card-inner {
+        flex-direction: column;
+        align-items: left;
+        text-align: left;
+    }
+    .staff-photo-wrapper {
+        flex: 0 0 auto;
+        max-width: 150px;
+        width: 100%;
+    }
+    .staff-photo {
+        height: 150px;
+    }
+    .staff-info {
+        text-align: center;
+    }
+    .staff-info .btn {
+        align-self: center;
+    }
+    .modal-news-grid {
+        grid-template-columns: 1fr;
+    }
+    .modal-container-wide {
+        padding: 20px;
+        max-height: 90vh;
+    }
+    .modal-header h2 {
+        font-size: 1.4rem;
+    }
 }
 
 @media (max-width: 600px) {
@@ -1848,6 +1831,22 @@ p {
         padding: 10px 12px;
     }
     .page-header h1 { font-size: 2rem; }
+    .staff-photo-wrapper {
+        max-width: 120px;
+    }
+    .staff-photo {
+        height: 120px;
+    }
+    .unit-hero { height: 280px; }
+    .unit-hero .unit-slider .slide-caption {
+        bottom: 60px;
+        left: 15px;
+        font-size: 0.75rem;
+        padding: 6px 14px;
+    }
+    .modal-news-image {
+        height: 150px;
+    }
 }
 
 @media (max-width: 400px) {
@@ -1886,13 +1885,3 @@ p {
     transform: scale(1.04);
 }
 
-/* Responsive: en móvil se apila */
-@media (max-width: 768px) {
-    .history-grid {
-        grid-template-columns: 1fr;
-        gap: 24px;
-    }
-    .history-image img {
-        max-height: 280px;
-    }
-}
