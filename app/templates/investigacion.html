@@ -9,6 +9,7 @@
             <h1>Investigación científica</h1>
         </div>
     </section>
+
     <!-- Líneas -->
     <section class="section section-soft">
         <div class="container">
@@ -28,6 +29,7 @@
             </div>
         </div>
     </section>
+
     <!-- Áreas -->
     <section class="section">
         <div class="container">
@@ -48,33 +50,86 @@
         </div>
     </section>
 
-
-
     <!-- Proyectos -->
-    <section class="section">
+    <section class="section section-soft">
         <div class="container">
+            <div class="section-heading">
+                <span class="eyebrow">PROYECTOS</span>
+                <h2>Proyectos de investigación</h2>
+            </div>
             <div class="tabs">
                 <button class="tab active" data-tab="ejecucion">Proyectos en ejecución</button>
                 <button class="tab" data-tab="concluidos">Proyectos concluidos</button>
             </div>
+            
+            <!-- Proyectos en Ejecución -->
             <div class="tab-panel active" id="ejecucion">
-                <div class="empty-state">
-            {% if events_items %}
-                {% for event in investigacion_items %}
-                    <article class="feature-card">
-                        <h2>{{ proyect.titulo }}</h2>
-                    </article>
-                {% endfor %}
-                </div>
+                {% if projects and projects.ejecucion %}
+                    <div class="card-grid three">
+                        {% for project in projects.ejecucion %}
+                            <article class="feature-card">
+                                <h3>{{ project.titulo }}</h3>
+                                <p style="font-size: 0.9rem; margin-bottom: 10px;">{{ project.resumen }}</p>
+                                <p style="font-size: 0.8rem; color: var(--gold); font-weight: bold;">
+                                    <i class="fas fa-money-bill-wave"></i> {{ project.financiamiento }}
+                                </p>
+                            </article>
+                        {% endfor %}
+                    </div>
+                {% else %}
+                    <div class="empty-state">No hay proyectos en ejecución registrados actualmente.</div>
+                {% endif %}
             </div>
+            
+            <!-- Proyectos Concluidos -->
             <div class="tab-panel" id="concluidos">
-                <div class="empty-state">
-                    Los proyectos concluidos se incorporarán después.
-                </div>
+                {% if projects and projects.concluidos %}
+                    <div class="card-grid three">
+                        {% for project in projects.concluidos %}
+                            <article class="feature-card">
+                                <h3>{{ project.titulo }}</h3>
+                                <p style="font-size: 0.9rem; margin-bottom: 10px;">{{ project.resumen }}</p>
+                                <p style="font-size: 0.8rem; color: var(--gold); font-weight: bold;">
+                                    <i class="fas fa-money-bill-wave"></i> {{ project.financiamiento }}
+                                </p>
+                            </article>
+                        {% endfor %}
+                    </div>
+                {% else %}
+                    <div class="empty-state">Los proyectos concluidos se incorporarán después.</div>
+                {% endif %}
             </div>
         </div>
+    </section>
+
+    <!-- Publicaciones -->
+    <section class="section">
+        <div class="container">
+            <div class="section-heading">
+                <span class="eyebrow">PUBLICACIONES</span>
+                <h2>Publicaciones científicas</h2>
+            </div>
+            <div class="card-grid three">
+                {% for pub in publications %}
+                    <article class="feature-card">
+                        <h3 style="font-size: 1rem; line-height: 1.4;">{{ pub.title }}</h3>
+                        <p style="font-size: 0.85rem; color: var(--muted); margin-top: 8px;">
+                            <strong>Autores:</strong> {{ pub.authors }}
+                        </p>
+                        <p style="font-size: 0.85rem; color: var(--umsa-medium); font-style: italic;">
+                            {{ pub.source }}
+                        </p>
+                    </article>
+                {% else %}
+                    <div class="empty-state">No hay publicaciones registradas.</div>
+                {% endfor %}
+            </div>
+        </div>
+    </section>
+
+    <div class="container" style="margin-bottom: 40px;">
         <div class="contact-block back-link">
             <a href="{{ url_for('main.home') }}" class="btn btn-outline">← Volver a inicio</a>
         </div>
-    </section>
+    </div>
 {% endblock %}

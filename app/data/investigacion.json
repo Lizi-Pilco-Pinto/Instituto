@@ -1,5 +1,4 @@
 {
-
   "research_areas": [
     "Genética clínica y enfermedades raras",
     "Citogenética y genómica",
@@ -13,27 +12,55 @@
   ],
   "projects": {
     "ejecucion": [
-      "VIGILANCIA EPIDEMIOLÓGICA PARA PREVENCION DE ANOMALÍAS CONGÉNITAS EN NEONATOS DEL HOSPITAL DE LA MUJER Y EL HOSPITAL DE NIÑO, DE LA PAZ BOLIVIA, 2023 A 2026",
-      "PROYECTO2",
-      "PROYECTO3"
+      {
+        "titulo": "Implementación de técnicas para medir la longitud de telómeros humanos",
+        "resumen": "Cuantificación mediante PCR en tiempo real y FISH en el Instituto de Genética. Los telómeros son repeticiones de nucleótidos que protegen el final de los cromosomas. El presente proyecto pretende implementar dos técnicas para evaluar la longitud de los telómeros para su aplicación en evaluación de exposiciones ambientales y ocupacionales.",
+        "financiamiento": "Fondos concursables del Instituto de Genética - TGN (2024-2025)"
+      },
+      {
+        "titulo": "Mecanismo de resiliencia Ayllu para enfrentar los efectos del cambio climático",
+        "resumen": "A partir del diálogo de saberes de los conocimientos locales en combinación con tecnologías innovadoras para fortalecer la seguridad alimentaria en la comunidad de Micaya, Municipio de Colquencha-La Paz, Bolivia.",
+        "financiamiento": "Instituto Interamericano para la Investigación del Cambio Global (IAI): Respuesta en Clima y Ambiente para la Salud en las Américas (2023-2025)"
+      },
+      {
+        "titulo": "Microtoxbol: Una red que aborda la exposición ambiental y los efectos en la salud",
+        "resumen": "Red de investigación sobre metales y plaguicidas, evaluando la exposición ambiental y sus efectos en la salud.",
+        "financiamiento": "Swedish Research Council (2020-2021, ampliación al 2025)"
+      }
     ],
     "concluidos": [
-      "PROYECTO4",
-      "PROYECTO5"
+      {
+        "titulo": "Proyecto de investigación concluido 1",
+        "resumen": "Descripción del proyecto concluido.",
+        "financiamiento": "Financiamiento interno"
+      }
     ]
   },
-
-"publications": [
+  "publications": [
     {
-      "title": "PUBLICACION 1",
-      "authors": "AUTORES",
-      "source": "RESUMEN"
+      "title": "Human Pesticide Exposure in Bolivia: A Scoping Review of Current Knowledge, Future Challenges and Research Needs",
+      "authors": "Jessika Barrón, Kristian Dreij, Noemi Tirado",
+      "source": "J. Environ. Res. Public Health 21(3), 305 (2024)"
     },
     {
-      "title": "PUBLICACION 2",
-      "authors": "AUTORES",
-      "source": "RESUMEN"
+      "title": "Genotoxicity in humans exposed to arsenic and lithium in drinking water in the Bolivian Andes",
+      "authors": "Noemi Tirado, Josue Mamani, Karin Broberg, Jacques Gardon",
+      "source": "Authorea (2023)"
+    },
+    {
+      "title": "Towards a comprehensive understanding of the 'Origin, distribution, and biogeochemistry of arsenic in the Altiplano Puna plateau of South America'",
+      "authors": "Jesica Murray, Joseline Tapia, Mauricio Ormachea, Noemi Tirado, D. Kirk Nordstrom",
+      "source": "Episodes (2023)"
+    },
+    {
+      "title": "Health Effects of Pesticide Exposure in Latin American and the Caribbean Populations: A Scoping Review",
+      "authors": "Liliana A. Zúñiga-Venegas, Carly Hyland, Noemi Tirado, et al.",
+      "source": "Environmental Health Perspectives. 130(9) (2022)"
+    },
+    {
+      "title": "Human adaptation to arsenic in Bolivians living in the Andes",
+      "authors": "De Loma J., Vicente M., Tirado N., Ascui F., Vahter M., Gardon J., Schlebusch C., Broberg K.",
+      "source": "Chemosphere 301, 134764 (2022)"
     }
   ]
-
 }

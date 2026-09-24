@@ -1550,6 +1550,7 @@ p {
 @media (max-width: 1024px) {
     .card-grid.three { grid-template-columns: repeat(2, 1fr); }
     .hero-inner { gap: 30px; }
+    
 }
 
 @media (max-width: 992px) {
@@ -1565,6 +1566,7 @@ p {
     .contact-grid,
     .research-banner { grid-template-columns: 1fr; }
     .card-grid.three { grid-template-columns: 1fr 1fr; }
+    .logo-umsa { display: none; }
 }
 
 @media (max-width: 768px) {

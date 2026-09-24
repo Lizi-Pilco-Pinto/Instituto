@@ -184,7 +184,8 @@ def investigacion():
     return render_template("investigacion.html", 
                            projects=DATA['projects'], 
                            research_areas=DATA['research_areas'], 
-                           research_lines=DATA['research_lines'])
+                           research_lines=DATA['research_lines'],
+                           publications=DATA['publications'])
 
 @main.route("/publicaciones")
 def publicaciones():
