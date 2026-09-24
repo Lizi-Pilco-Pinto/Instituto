@@ -1426,15 +1426,13 @@ p {
 .site-footer {
     background: var(--umsa-dark);
     color: rgba(255, 255, 255, 0.8);
-    padding: 12px 0 6px; /* mismo padding que el header */
 }
 
 .footer-grid {
     display: grid;
     grid-template-columns: 1.4fr 0.8fr 0.8fr;
     gap: 30px;
-    padding-bottom: 12px; /* reducido para que el borde esté más cerca */
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    padding-bottom: 12px; 
 }
 
 .site-footer h3 {
