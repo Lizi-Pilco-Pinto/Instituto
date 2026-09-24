@@ -38,4 +38,3 @@ El contenido marcado como pendiente debe ser validado por el Instituto antes de 
 
 Esta versión incorpora contenido de prueba basado en información pública de la UMSA y del Instituto de Genética, además de imágenes externas utilizadas exclusivamente como material visual provisional.
 
-**Antes de publicar el sitio:** sustituir las imágenes de demostración por fotografías institucionales autorizadas y validar misión, visión, objetivos, organigrama, personal, requisitos, horarios, costos, noticias y eventos con el Instituto.
